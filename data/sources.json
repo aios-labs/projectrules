@@ -1,0 +1,15 @@
+{
+  "sources": [
+    {
+      "id": "supabase-prompts",
+      "name": "Supabase Prompts",
+      "type": "github",
+      "owner": "supabase",
+      "repo": "supabase",
+      "path": "examples/prompts",
+      "branch": "master",
+      "__meta__service": "Supabase",
+      "__meta__tags": ["Supabase"]
+    }
+  ]
+}
