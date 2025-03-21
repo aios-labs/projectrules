@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Code, Bookmark, Check } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Rule } from '@/types/rule';
 import { useSelectedRules } from '@/hooks/use-selected-rules';
