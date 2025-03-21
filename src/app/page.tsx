@@ -21,7 +21,7 @@ function getParamValue(param: string | string[] | undefined): string[] {
 export default async function Home({
   searchParams,
 }: {
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
   // Next.js requires searchParams to be awaited in new versions
   const resolvedParams = await searchParams;

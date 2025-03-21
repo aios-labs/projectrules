@@ -12,13 +12,11 @@ export async function getRules(): Promise<Rule[]> {
   // Get manual rules
   const manualRulesDir = path.join(RULES_DIR, 'manual');
   const manualRules = await readRulesFromDirectory(manualRulesDir, 'manual');
-  console.log('manualRules', manualRules);
   rules.push(...manualRules);
 
   // Get remote rules from GitHub repositories
   try {
     const remoteRules = await getRemoteRules();
-    console.log('remoteRules', remoteRules);
     rules.push(...remoteRules);
   } catch (error) {
     console.error('Error fetching remote rules:', error);
@@ -68,7 +66,11 @@ export function getUniqueValues(rules: Rule[], key: keyof RuleFrontmatter): stri
   rules.forEach(rule => {
     const value = rule.frontmatter[key];
     if (value) {
-      values.add(value);
+      if (Array.isArray(value)) {
+        value.forEach(item => values.add(item));
+      } else {
+        values.add(value);
+      }
     }
   });
 

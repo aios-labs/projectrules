@@ -42,9 +42,9 @@ export function SelectedRulesList({ allRules }: SelectedRulesListProps) {
         {selectedRuleObjects.map(rule => (
           <div key={rule.slug} className="glass-card p-4 rounded-lg flex items-center justify-between gap-4">
             <div>
-              <div className="font-medium">{rule.frontmatter.framework}</div>
+              <div className="font-medium">{rule.frontmatter.__meta__framework}</div>
               <div className="text-sm text-muted-foreground">
-                {rule.frontmatter.service} • {rule.frontmatter.type}
+                {rule.frontmatter.__meta__service} • {rule.frontmatter.__meta__type}
               </div>
             </div>
             <Button
