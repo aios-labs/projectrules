@@ -107,6 +107,9 @@ export function Filters({ services = [], frameworks = [], types = [], counts = {
       newParams.append(paramName, value);
     }
 
+    // Reset pagination when filters change
+    newParams.delete('page');
+
     router.push(`${pathname}?${newParams.toString()}`);
   }, [searchParams, pathname, router]);
 
@@ -118,6 +121,9 @@ export function Filters({ services = [], frameworks = [], types = [], counts = {
     tempFilters.services.forEach(service => newParams.append('service', service));
     tempFilters.frameworks.forEach(framework => newParams.append('framework', framework));
     tempFilters.types.forEach(type => newParams.append('type', type));
+
+    // Reset to page 1 when filters are applied
+    // (Don't add page param, defaults to page 1)
 
     router.push(`${pathname}?${newParams.toString()}`);
   }, [tempFilters, pathname, router]);
