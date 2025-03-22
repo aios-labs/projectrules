@@ -19,6 +19,16 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "Project Rules",
   description: "Find and download project rules for your codebase",
+  openGraph: {
+    title: "Project Rules",
+    description: "Find and download project rules for your codebase",
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Project Rules',
+    description: 'Find and download project rules for your codebase',
+  },
 };
 
 export default function RootLayout({
