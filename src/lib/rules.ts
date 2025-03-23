@@ -60,7 +60,7 @@ async function readRulesFromDirectory(dir: string, source: 'manual' | 'external'
   return rules;
 }
 
-export function getUniqueValues(rules: Rule[], key: keyof RuleFrontmatter): string[] {
+export function getUniqueValues(rules: Rule[], key: keyof RuleFrontmatter): (string | number)[] {
   const values = new Set<string | number>();
 
   rules.forEach(rule => {
