@@ -1,4 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Rules
+
+![Project Rules - A collection of curated instructions and project rules for your AI-powered IDE tools.](https://www.projectrules.ai/opengraph-image.png)
+
+This repository contains a collection of best practices, coding standards, and guidelines for various technologies, frameworks, and development workflows. It serves as a centralized knowledge base to maintain consistency across projects and teams.
+
+## Purpose
+
+- Provide clear, actionable guidelines for developers
+- Establish consistent coding standards
+- Document best practices for different technologies
+- Serve as a reference for new team members
+- Improve code quality and maintainability
+
+## Contents
+
+The repository contains rules for various categories including:
+
+- Language-specific guidelines (JavaScript, TypeScript, Python, Rust, etc.)
+- Framework best practices (React, Next.js, etc.)
+- Security standards
+- Testing approaches
+- Documentation guidelines
+- Workflow recommendations
+
+## Contributing
+
+We welcome contributions to this collection of project rules! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for details on how to add new rules or update existing ones.
 
 ## Getting Started
 
