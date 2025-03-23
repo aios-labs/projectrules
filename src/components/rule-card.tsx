@@ -70,12 +70,12 @@ export function RuleCard({ rule }: RuleCardProps) {
                 {/* Title from first h1 in content */}
                 <div>
                   <h3 className="font-bold text-lg md:text-xl transition-colors mr-4 text-indigo-950 tracking-tighter">
-                    {getFirstH1()}
+                    {getFirstH1() ?? rule.slug}
                   </h3>
                 </div>
 
                 {/* Description */}
-                <p className="leading-relaxed text-muted-foreground font-light">
+                <p className="leading-relaxed text-muted-foreground font-light line-clamp-3 overflow-hidden">
                   {rule.frontmatter.description}
                 </p>
 

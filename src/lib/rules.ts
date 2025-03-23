@@ -23,7 +23,7 @@ export async function getRules(): Promise<Rule[]> {
     // Continue without remote rules if there are API issues
   }
 
-  return rules;
+  return rules.sort((a, b) => (b.frontmatter.__meta__rate ?? 0) - (a.frontmatter.__meta__rate ?? 0));
 }
 
 async function readRulesFromDirectory(dir: string, source: 'manual' | 'external'): Promise<Rule[]> {

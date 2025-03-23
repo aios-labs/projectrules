@@ -6,6 +6,7 @@ export interface RuleFrontmatter {
   __meta__type?: string;
   __meta__author?: string;
   __meta__tags?: string[];
+  __meta__rate?: number;
 }
 
 export interface Rule {
