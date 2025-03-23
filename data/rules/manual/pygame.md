@@ -4,7 +4,6 @@ globs: "**/*.py"
 __meta__type: guideline
 __meta__tags: ["pygame","python","game-development","best-practices","coding-standards"]
 ---
----
 
 # Pygame Development Best Practices
 

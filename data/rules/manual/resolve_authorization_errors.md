@@ -7,11 +7,7 @@ __meta__service: "Salesforce"
 __meta__tags: ["Salesforce DX","Authorization","Troubleshooting","Salesforce CLI","Authentication"]
 __meta__rate: 8
 ---
----
-description: How to resolve common authorization errors when working with Salesforce DX
-globs:
-alwaysApply: false
----
+
 # Resolve Common Authorization Errors
 
 ## Overview

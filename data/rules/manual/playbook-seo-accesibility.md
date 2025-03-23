@@ -7,11 +7,6 @@ __meta__framework: "Ruby on Rails"
 __meta__tags: ["Accessibility","SEO","Slim Templates","Web Development","Ruby on Rails"]
 __meta__rate: 7.5
 ---
----
-description: Accessibility and SEO best practices for Slim templates
-globs: *.slim
-alwaysApply: false
----
 
 You are an expert in web accessibility (a11y) and SEO optimization, specifically for Slim templates in Ruby on Rails applications.
 

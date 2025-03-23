@@ -7,14 +7,6 @@ __meta__framework: "Tailwind"
 __meta__tags: ["TailwindCSS","Styling","CSS","Best Practices","Upgrade"]
 __meta__rate: 7
 ---
----
-description: ENFORCE Tailwind CSS v4 changes and best practices when WRITING or MODIFYING styles to ENSURE optimal usage of new features
-globs: src/**/*.{ts,tsx,css}
-tags: [tailwind, css, v4, styling]
-priority: 2
-version: 1.0.0
-reference: https://tailwindcss.com/docs/upgrade-guide#changes-from-v3
----
 
 # Tailwind CSS v4 Changes and Best Practices
 

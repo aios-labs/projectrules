@@ -5,7 +5,7 @@ __meta__type: guideline
 __meta__framework: Ionic
 __meta__tags: ["ionic","angular","typescript","performance","security"]
 ---
----
+
 # Ionic Framework Best Practices
 
 This document outlines best practices for developing Ionic applications. Following these guidelines will help ensure your applications are maintainable, performant, secure, and testable.

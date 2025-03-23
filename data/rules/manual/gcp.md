@@ -5,7 +5,7 @@ __meta__type: guideline
 __meta__service: GPC
 __meta__tags: ["terraform","cloud-functions","cloud-pubsub","cloud-storage","cloud-sql"]
 ---
----
+
 ## GCP Library Best Practices
 
 This document outlines best practices for developing and managing applications and infrastructure on Google Cloud Platform (GCP). It covers various aspects, including code organization, common patterns, performance, security, testing, common pitfalls, and tooling.

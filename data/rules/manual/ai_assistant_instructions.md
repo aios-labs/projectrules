@@ -6,10 +6,6 @@ __meta__repo: "LordThiouk/sodav-monitor"
 __meta__tags: ["AI","Python","TypeScript","DevOps","SQL"]
 __meta__rate: 7
 ---
----
-description: Detailed AI Assistant Instructions and Behavior Guidelines
-globs: *
----
 <customInstructions>
 ### 1. Core AI Assistant Capabilities
 - Expert-level knowledge in:

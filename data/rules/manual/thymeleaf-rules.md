@@ -7,11 +7,6 @@ __meta__framework: "Tailwind"
 __meta__tags: ["Thymeleaf","HTML","CSS","Alpine.js","Javascript"]
 __meta__rate: 7
 ---
----
-description: Active on Thymeleaf ,  HTML ,  CSS , tailwind ,  Alpine and Javascript
-globs: **/*.html, **/*.ts, **/*.css, **/*.js
-alwaysApply: true
----
 
 # Cursor AI Rules for HTML, CSS, JAVASCRIPT, Thymeleaf, Tailwind 4, and Alpine.js Frontend
 

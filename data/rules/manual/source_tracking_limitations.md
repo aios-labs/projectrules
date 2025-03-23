@@ -7,11 +7,6 @@ __meta__service: "Salesforce"
 __meta__tags: ["Salesforce DX","Source Tracking","Development Workflow","Metadata Management","Conflict Resolution"]
 __meta__rate: 7
 ---
----
-description: Understanding the limitations of source tracking in Salesforce DX
-globs:
-alwaysApply: false
----
 # Source Tracking Limitations in Salesforce DX
 
 ## Overview

@@ -6,10 +6,7 @@ __meta__repo: "ivangrynenko/cursorrules"
 __meta__tags: ["Best Practices","File Organization","Code Standards","Regex","Documentation"]
 __meta__rate: 7
 ---
----
-description: Cursor Rules Location
-globs: *.mdc
----
+
 # Cursor Rules Location
 
 Standards for placing and organizing Cursor rule files in the repository, ensuring rules are always up-to-date and follow best practices.

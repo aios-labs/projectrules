@@ -5,7 +5,6 @@ __meta__type: guideline
 __meta__service: AWS
 __meta__tags: ["boto3","python","aws","security","performance"]
 ---
----
 
 # boto3 Best Practices
 

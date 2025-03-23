@@ -6,7 +6,7 @@ __meta__repo: "heltondoria/cursor-review"
 __meta__tags: ["Java","Naming Conventions","Code Quality","Spring","Best Practices"]
 __meta__rate: 8
 ---
----
+
 guidelines:
   file_and_directory_names:
     title: Nomes de Arquivos e Diretórios
@@ -110,11 +110,11 @@ examples:
   bad_practice:
     code: |
       package com.app.Proj;
-      
+
       class data {
           private int d;
           private String s;
-          
+
           public void proc() {
               // código
           }
@@ -128,15 +128,15 @@ examples:
   good_practice:
     code: |
       package com.company.project.data;
-      
+
       public class UserProfile {
           private int userId;
           private String fullName;
-          
+
           public void processUserData() {
               // código
           }
-          
+
           public String getFullName() {
               return fullName;
           }

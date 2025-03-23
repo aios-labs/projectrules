@@ -5,7 +5,6 @@ __meta__type: guideline
 __meta__service: Firebase
 __meta__tags: ["firebase","best-practices","security","performance","testing"]
 ---
----
 
 ## Firebase Library Best Practices
 

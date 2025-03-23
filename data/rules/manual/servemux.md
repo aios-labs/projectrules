@@ -4,7 +4,7 @@ globs: "**/*.go"
 __meta__type: guideline
 __meta__tags: ["go","net/http","ServeMux","middleware","routing"]
 ---
----
+
 # servemux Best Practices and Coding Standards
 
 This document provides comprehensive guidelines for using the `net/http` ServeMux in Go, promoting best practices, coding standards, and efficient development.
@@ -62,7 +62,7 @@ type UserStore interface {
 type UserHandler struct {
     store UserStore
 }
-    
+
 
 ### 1.5 Code Splitting Strategies
 
@@ -87,7 +87,7 @@ func LoggingMiddleware(next http.Handler) http.Handler {
 // Usage:
 mux := http.NewServeMux()
 mux.Handle("/", LoggingMiddleware(http.HandlerFunc(myHandler)))
-    
+
 
 -   **Context-Aware Handlers:** Utilize the `context.Context` to pass request-scoped values to handlers. This facilitates tracing, request cancellation, and data sharing.
 
@@ -100,7 +100,7 @@ func MyHandler(w http.ResponseWriter, r *http.Request) {
 // Setting context value in middleware:
 ctx := context.WithValue(r.Context(), "userID", 123)
 r = r.WithContext(ctx)
-    
+
 
 -   **Route Grouping (with custom muxes):** Use separate ServeMux instances for different route groups (e.g., API v1, API v2, admin routes).  This improves organization and maintainability.
 
@@ -115,7 +115,7 @@ v2Mux.HandleFunc("/products", v2ProductsHandler)
 
 http.Handle("/api/v1/", v1Mux)
 http.Handle("/api/v2/", v2Mux)
-    
+
 
 ### 2.2 Recommended Approaches for Common Tasks
 
@@ -125,28 +125,28 @@ http.Handle("/api/v2/", v2Mux)
 mux := http.NewServeMux()
 mux.HandleFunc("/", myHandler)
 http.ListenAndServe(":8080", mux)
-    
+
 
 -   **Registering Handlers:**  Use `mux.HandleFunc()` or `mux.Handle()` to register handlers with the ServeMux.
 
     go
 mux.HandleFunc("/users", usersHandler)
 mux.Handle("/products", productHandler{})
-    
+
 
 -   **Serving Static Files:** Use `http.FileServer()` to serve static files.
 
     go
 fs := http.FileServer(http.Dir("./static"))
 mux.Handle("/static/", http.StripPrefix("/static/", fs))
-    
+
 
 -   **Handling HTTP Methods:**  Use `http.MethodGet`, `http.MethodPost`, etc., constants to check the HTTP method.  With Go 1.22+, specify methods in the pattern itself for `HandleFunc`.
 
     go
 mux.HandleFunc("GET /users/{id}", getUserHandler)
 mux.HandleFunc("POST /users", createUserHandler)
-    
+
 
 ### 2.3 Anti-patterns and Code Smells to Avoid
 
@@ -179,7 +179,7 @@ func ErrorHandlingMiddleware(next http.Handler) http.Handler {
         next.ServeHTTP(w, r)
     })
 }
-    
+
 
 -   **Custom Error Types:** Define custom error types to provide more context about the error.
 
@@ -192,7 +192,7 @@ type ValidationError struct {
 func (e *ValidationError) Error() string {
     return fmt.Sprintf("Validation error: %s - %s", e.Field, e.Message)
 }
-    
+
 
 -   **Logging Errors:** Log errors with sufficient detail for debugging.
 -   **Returning Appropriate Status Codes:** Return appropriate HTTP status codes based on the error. Use descriptive error messages in the response body.
@@ -231,7 +231,7 @@ type gzipResponseWriter struct {
 func (w gzipResponseWriter) Write(b []byte) (int, error) {
     return w.Writer.Write(b)
 }
-    
+
 
 -   **Keep-Alive Connections:** Enable keep-alive connections to reduce connection establishment overhead.
 -   **Efficient Data Structures:**  Use efficient data structures and algorithms for data processing.

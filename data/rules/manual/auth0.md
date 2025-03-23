@@ -5,7 +5,6 @@ __meta__type: guideline
 __meta__service: Auth0
 __meta__tags: ["authentication","security","identity","best-practices"]
 ---
----
 
 # Auth0 Best Practices and Coding Standards
 

@@ -7,11 +7,7 @@ __meta__service: "Salesforce"
 __meta__tags: ["Salesforce DX","Sandbox Management","Development Environment","Testing","CLI"]
 __meta__rate: 7
 ---
----
-description: How to create, clone, or refresh Salesforce sandboxes using Salesforce DX
-globs:
-alwaysApply: false
----
+
 # Create, Clone, or Refresh a Sandbox
 
 ## Overview

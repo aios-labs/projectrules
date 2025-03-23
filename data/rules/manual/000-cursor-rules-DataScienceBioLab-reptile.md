@@ -8,14 +8,6 @@ __meta__duplicate: "true"
 __meta__tags: ["Rule Creation","Validation","Consistency","AI Optimization","Markdown"]
 __meta__rate: 7
 ---
----
-crossRefs:
-  - 001-rule-generator.mdc
-  - 002-rule-organization.mdc
-  - 004-mdc-rule-location.mdc
-  - 010-rule-cross-referencing.mdc
-alwaysApply: true
----
 
 # Cursor Rules Format
 
@@ -153,4 +145,4 @@ Some unstructured content
 - Frontmatter MUST only have description, globs, optional crossRefs, and optional alwaysApply
 </critical>
 
-<version>2.0.0</version> 
+<version>2.0.0</version>

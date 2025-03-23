@@ -6,10 +6,7 @@ __meta__repo: "voolyvex/shadow-worker"
 __meta__tags: ["Development Tools","Workflow Optimization","C++","Version Control","Testing"]
 __meta__rate: 7
 ---
----
-description: Tools and workflows for optimizing Shadow Worker development
-globs: ["tools/**/*", "scripts/**/*", "build/**/*.bat", "build/**/*.cmd"]
----
+
 # Development Productivity Tools
 
 ## Purpose

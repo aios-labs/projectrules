@@ -6,10 +6,6 @@ __meta__repo: "Shankhara/rosruc_settings"
 __meta__tags: ["Technical Communication","Code Review","Documentation","Best Practices","Software Development"]
 __meta__rate: 7
 ---
----
-description: Communiquer avec précision technique en utilisant une terminologie exacte et des références spécifiques au contexte du projet
-globs: **/*.{js,jsx,ts,tsx,md}
----
 
 # Communication technique précise
 

@@ -6,14 +6,6 @@ __meta__repo: "DataScienceBioLab/squirrel"
 __meta__tags: ["Rust","Port Management","Security","Validation","Resource Management"]
 __meta__rate: 7
 ---
----
-description: ENFORCE proper port management practices in Rust code, focusing on security, validation, and resource management
-globs: ["**/*.rs"]
-crossRefs:
-  - 1001-rust-safety.mdc
-  - 1009-rust-error-handling.mdc
-  - 1012-rust-logging-monitoring.mdc
----
 
 # Rust Port Management Standards
 

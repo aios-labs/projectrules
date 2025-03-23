@@ -6,10 +6,6 @@ __meta__repo: "Shankhara/rosruc_settings"
 __meta__tags: ["Code Quality","Technical Alignment","Proposal Process","Typescript","Javascript"]
 __meta__rate: 7
 ---
----
-description: Proposer une implémentation détaillée avant toute modification de code pour garantir la qualité et l'alignement technique
-globs: **/*.{js,jsx,ts,tsx}
----
 
 # Proposition avant implémentation
 

@@ -4,7 +4,6 @@ globs: "**/*.py"
 __meta__type: guideline
 __meta__tags: ["python","requests","http-client","best-practices","testing"]
 ---
----
 
 # Requests Library Best Practices
 
@@ -21,7 +20,7 @@ This document provides comprehensive guidelines for using the Python `requests` 
 
 *   **Simple Scripts:** For simple, single-file scripts, the structure is less critical. Keep related resources (e.g., configuration files, data files) in the same directory.
 *   **Larger Projects:** For larger projects:
-    
+
     my_project/
     ├── src/
     │   ├── __init__.py
@@ -36,7 +35,7 @@ This document provides comprehensive guidelines for using the Python `requests` 
     ├── README.md
     ├── requirements.txt
     └── .gitignore
-    
+
     *   `src/`: Contains the main application code.
     *   `api_client.py`:  Houses the `requests` calls, session management, and error handling.
     *   `models.py`: Defines data classes/namedtuples to represent the structure of API responses, aiding type hinting and validation.

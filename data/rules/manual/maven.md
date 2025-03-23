@@ -4,7 +4,7 @@ globs: "**/pom.xml"
 __meta__type: guideline
 __meta__tags: ["maven","java","dependency-management","performance-optimization","security-best-practices"]
 ---
----
+
 - **Introduction**
   This guide provides comprehensive best practices for effectively using Maven in Java development, focusing on code organization, dependency management, performance, security, testing, and tooling. Adhering to these guidelines will result in more maintainable, scalable, and robust Maven projects.
 
@@ -12,7 +12,7 @@ __meta__tags: ["maven","java","dependency-management","performance-optimization"
 
   - **Standard Directory Structure:**
     - Follow the standard Maven directory structure for consistency and ease of understanding:
-      
+
       project-root/
       ├── src/
       │   ├── main/
@@ -22,14 +22,14 @@ __meta__tags: ["maven","java","dependency-management","performance-optimization"
       │   │   ├── java/      # Test code
       │   │   ├── resources/ # Test resources
       ├── pom.xml            # Maven project definition
-      
+
   - **File Naming Conventions:**
     - Java source files: `YourClass.java`
     - Resource files: `application.properties`, `log4j2.xml`
     - POM files: `pom.xml`
   - **Module Organization (Multi-Module Projects):**
     - For larger projects, consider using a multi-module structure:
-      
+
       parent-project/
       ├── pom.xml            # Parent POM (defines dependencies, plugins, versions)
       ├── module1/
@@ -37,7 +37,7 @@ __meta__tags: ["maven","java","dependency-management","performance-optimization"
       ├── module2/
       │   └── pom.xml
       └── ...
-      
+
     - Parent POM handles shared configurations.
     - Each module has its specific functionality and dependencies.
   - **Component Architecture:**

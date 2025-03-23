@@ -5,7 +5,7 @@ __meta__type: guideline
 __meta__service: Clerk
 __meta__tags: ["clerk","authentication","security","performance","testing"]
 ---
----
+
 ## Clerk Library Best Practices
 
 This document provides comprehensive guidelines for developing applications using the Clerk library. It covers various aspects, including code organization, common patterns, performance considerations, security, testing, common pitfalls, and tooling, aiming to help developers build robust, secure, and maintainable applications.
