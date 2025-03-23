@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { X, SquareArrowDown } from 'lucide-react';
+import { X, SquareArrowDown, Github } from 'lucide-react';
 import { useSelectedRules } from '@/hooks/use-selected-rules';
 import { Button } from '@/components/ui/button';
 import { useState, useEffect, useRef } from 'react';
@@ -29,6 +29,7 @@ export function Navbar() {
           <div className="flex items-center gap-3 ">
             <ClearButton />
             <DownloadLink />
+            <GitHubLink />
           </div>
         </div>
       </div>
@@ -129,5 +130,16 @@ function DownloadLink() {
         <p className="text-xs">Continue selecting rules and click this button when ready to download.</p>
       </TooltipContent>
     </Tooltip>
+  );
+}
+
+function GitHubLink() {
+  return (
+    <Button variant="outline" size="icon" asChild>
+      <Link href="https://github.com/aios-labs/projectrules" target="_blank" rel="noopener noreferrer">
+        <Github className="h-5 w-5" />
+        <span className="sr-only">GitHub Repository</span>
+      </Link>
+    </Button>
   );
 }
