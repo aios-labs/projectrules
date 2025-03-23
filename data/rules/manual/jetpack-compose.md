@@ -2,14 +2,14 @@
 description: Enforces Jetpack Compose best practices for code organization, performance, and maintainability. This rule provides guidelines for writing efficient and idiomatic Compose code.
 globs: "**/*.kt"
 __meta__type: guideline
-__meta__framework: jetpack-compose
+__meta__framework: Jetpack Compose
 __meta__tags: ["android","ui","state-management","performance","architecture"]
 ---
 - **Code Organization and Structure**
   - **Directory Structure:**
     - Organize composables by feature or screen. Each feature should have its own directory.
     - Example:
-      
+
       app/
         src/
           main/
@@ -23,7 +23,7 @@ __meta__tags: ["android","ui","state-management","performance","architecture"]
                     FeatureATextField.kt
                 feature_b/
                   ...
-      
+
   - **File Naming Conventions:**
     - Use PascalCase for composable function names (e.g., `MyComposable`).
     - Use descriptive names that clearly indicate the composable's purpose.

@@ -2,7 +2,7 @@
 description: Comprehensive best practices and coding standards for developing, deploying, and maintaining applications on the Heroku platform. This rule emphasizes the Twelve-Factor App methodology and provides detailed guidance for optimizing application architecture, performance, security, and maintainability on Heroku.
 globs: "**/*"
 __meta__type: guideline
-__meta__service: heroku
+__meta__service: Heroku
 __meta__tags: ["twelve-factor-app","deployment","performance","security","maintainability"]
 ---
 - Follow the Twelve-Factor App methodology for building software-as-a-service applications.

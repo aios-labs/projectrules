@@ -2,7 +2,7 @@
 description: This rule file provides guidelines for writing stable and maintainable end-to-end tests using Detox, covering code structure, testing strategies, and performance considerations. It includes best practices for test ID usage, dealing with flakiness, and integrating with CI/CD pipelines.
 globs: "**/*.{e2e.js,e2e.ts,spec.js,spec.ts}"
 __meta__type: guideline
-__meta__framework: react
+__meta__framework: React
 __meta__tags: ["detox","react-native","e2e-testing","ci-cd","testing-strategies"]
 ---
 # Detox E2E Testing Best Practices for React Native
@@ -314,7 +314,7 @@ await element(by.text('OK')).tap(); // Dismiss the alert
         <Text>Next</Text>
       </TouchableOpacity>
     </View>
-    
+
 
 *   **iOS Native:** Use the `accessibilityIdentifier` property.
 *   **Android Native:** Use the `viewTag` property.

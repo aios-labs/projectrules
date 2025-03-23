@@ -2,7 +2,7 @@
 description: This rule provides comprehensive guidance on best practices for developing and managing AWS resources using the AWS CLI, covering code organization, security, performance, and testing.
 globs: "**/*.{sh,py,yml,yaml,tf,json,md}"
 __meta__type: guideline
-__meta__service: aws
+__meta__service: AWS
 __meta__tags: ["aws-cli","best-practices","code-organization","security","performance"]
 ---
 # AWS CLI Best Practices and Coding Standards

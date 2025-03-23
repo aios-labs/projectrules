@@ -2,7 +2,7 @@
 description: Comprehensive best practices for developing with MongoDB, covering schema design, code organization, performance optimization, security considerations, and testing strategies. This rule provides actionable guidance to help developers build robust and scalable MongoDB applications.
 globs: "**/*.{js,ts,mongodb}"
 __meta__type: guideline
-__meta__service: mongodb
+__meta__service: MongoDB
 __meta__tags: ["mongodb","schema-design","performance-optimization","security","testing-strategies"]
 ---
 - **Understand Schema Differences Between Relational and Document-based Databases:**  Recognize that MongoDB's document-oriented model differs significantly from relational databases. Design schemas that reflect the relationships within the data itself, rather than relying on joins.

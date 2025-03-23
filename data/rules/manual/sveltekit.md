@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices and coding standards for SvelteKit development, covering code structure, performance, security, testing, and common pitfalls. It aims to improve code quality, maintainability, and overall project health.
 globs: "**/*.svelte"
 __meta__type: guideline
-__meta__framework: svelte
+__meta__framework: Svelte
 __meta__tags: ["sveltekit","best-practices","code-structure","performance","security"]
 ---
 # SvelteKit Best Practices

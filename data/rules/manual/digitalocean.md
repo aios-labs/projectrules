@@ -2,7 +2,7 @@
 description: This rule provides comprehensive guidelines for DigitalOcean infrastructure and application development, covering code organization, security, performance, and deployment best practices.  It aims to ensure consistent, scalable, and secure cloud solutions on the DigitalOcean platform.
 globs: "**/*.{tf,yml,yaml,sh,py}"
 __meta__type: guideline
-__meta__service: digitalocean
+__meta__service: Digital Ocean
 __meta__tags: ["terraform","cloud","infrastructure","security","deployment"]
 ---
 # DigitalOcean Development Best Practices

@@ -2,7 +2,7 @@
 description: This rule file outlines comprehensive best practices for developing applications using the Clerk library, focusing on security, performance, code organization, and testing to ensure robust and maintainable authentication implementations.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__service: clerk
+__meta__service: Clerk
 __meta__tags: ["clerk","authentication","security","performance","testing"]
 ---
 ---

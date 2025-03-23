@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices for developing with Turbopack, covering code organization, performance, security, testing, and tooling to ensure efficient and maintainable applications.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: nextjs
+__meta__framework: NextJS
 __meta__tags: ["turbopack","typescript","nextjs","webpack","react"]
 ---
 # Turbopack Best Practices
@@ -46,7 +46,7 @@ This document outlines best practices for developing with Turbopack, focusing on
     - **Dynamic Imports:** Use dynamic imports (`import()`) to split code into smaller chunks that are loaded on demand.
     - **Route-Based Splitting:** (Next.js) Each page in the `pages/` directory is automatically code-split.
     - **Component-Based Splitting:** Split large components into smaller, lazily loaded sub-components.
-    - **Vendor Splitting:** Turbopack automatically splits vendor code (third-party libraries) into separate chunks. 
+    - **Vendor Splitting:** Turbopack automatically splits vendor code (third-party libraries) into separate chunks.
 
 ## 3. Common Patterns and Anti-patterns
 

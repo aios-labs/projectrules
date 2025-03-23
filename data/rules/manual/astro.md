@@ -2,7 +2,7 @@
 description: Comprehensive best practices and coding standards for Astro projects, including code organization, performance considerations, security, and testing.
 globs: "**/*.astro"
 __meta__type: guideline
-__meta__framework: astro
+__meta__framework: Astro
 __meta__tags: ["astro","best-practices","code-organization","performance","security"]
 ---
 - # Code Organization and Structure

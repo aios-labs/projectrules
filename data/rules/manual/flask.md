@@ -2,13 +2,13 @@
 description: This rule provides comprehensive best practices for developing Flask applications, covering code structure, security, performance, and testing.
 globs: "**/*.py"
 __meta__type: guideline
-__meta__framework: flask
+__meta__framework: Flask
 __meta__tags: ["flask","python","web-development","best-practices","application-structure"]
 ---
 - ## Code Organization and Structure:
   - **Directory Structure Best Practices:**
     - Follow a modular and organized project structure. A common structure is:
-      
+
       project_root/
       ├── app/
       │   ├── __init__.py
@@ -35,7 +35,7 @@ __meta__tags: ["flask","python","web-development","best-practices","application-
       ├── config.py # Application configuration
       ├── requirements.txt or pyproject.toml # Dependencies
       ├── run.py      # Application entry point
-      
+
     - Use Blueprints to organize routes and views into logical modules. Blueprints promote reusability and maintainability.
   - **File Naming Conventions:**
     - Use descriptive and consistent file names.
@@ -71,7 +71,7 @@ __meta__tags: ["flask","python","web-development","best-practices","application-
           app.register_blueprint(main_blueprint)
 
           return app
-      
+
     - **Blueprints:** Organize application functionality into reusable blueprints.
       python
       from flask import Blueprint
@@ -81,7 +81,7 @@ __meta__tags: ["flask","python","web-development","best-practices","application-
       @bp.route('/route')
       def my_route():
           return 'Hello from my_blueprint'
-      
+
   - **Recommended Approaches for Common Tasks:**
     - **Database Interactions:** Use Flask-SQLAlchemy or another ORM for database interactions. Define models to represent database tables.
     - **Form Handling:** Use Flask-WTF for form handling. This provides CSRF protection and simplifies form validation.

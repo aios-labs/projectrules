@@ -2,7 +2,7 @@
 description: This rule enforces best practices for using react-query in React applications, covering code organization, performance, security, and testing.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: react
+__meta__framework: React
 __meta__tags: ["react-query","react","best-practices","performance","testing"]
 ---
 # react-query Best Practices
@@ -14,7 +14,7 @@ This document outlines the best practices for using react-query in React applica
 ### 1.1 Directory Structure Best Practices
 
 *   **Feature-based Organization:** Group react-query hooks and related components within feature-specific directories.  This improves modularity and maintainability.
-    
+
     src/
     ├── features/
     │   ├── users/
@@ -31,7 +31,7 @@ This document outlines the best practices for using react-query in React applica
     │   ├── products/
     │   └── ...
     ├── ...
-    
+
 
 *   **Dedicated API Service Layer:** Abstract API interaction logic into separate modules.  This allows for easier testing and decoupling of components from specific API implementations. Consider using a dedicated `api` directory within each feature.
 
@@ -53,7 +53,7 @@ This document outlines the best practices for using react-query in React applica
     export const useUsersQuery = () => {
       return useQuery('users', fetchUsers);
     };
-    
+
 
 *   **Separate Query and Mutation Files:** Organize queries and mutations into separate files or modules. This enhances code readability and maintainability.
 
@@ -93,7 +93,7 @@ This document outlines the best practices for using react-query in React applica
     const { data: posts } = useQuery(['posts', user?.id], () => fetchPosts(user.id), {
       enabled: !!user,
     });
-    
+
 
 ### 2.3 Anti-patterns and Code Smells to Avoid
 

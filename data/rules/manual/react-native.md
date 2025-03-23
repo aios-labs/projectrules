@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices and coding standards for React Native development, covering code organization, performance, security, testing, and common pitfalls.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: react
+__meta__framework: React
 __meta__tags: ["react-native","typescript","state-management","performance","testing"]
 ---
 - Use TypeScript for type safety and improved code maintainability.
@@ -13,7 +13,7 @@ __meta__tags: ["react-native","typescript","state-management","performance","tes
 
 - **Directory Structure:**
     - Adopt a feature-based or component-based structure. For example:
-        
+
         src/
         ├── components/
         │   ├── Button/
@@ -34,7 +34,7 @@ __meta__tags: ["react-native","typescript","state-management","performance","tes
         ├── utils/
         ├── types/
         └── App.tsx
-        
+
     - Separate concerns into distinct directories (e.g., components, screens, navigation, services, utils, types).
 
 - **File Naming Conventions:**

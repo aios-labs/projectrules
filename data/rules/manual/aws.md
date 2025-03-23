@@ -2,7 +2,7 @@
 description: Comprehensive rules and best practices for AWS development using Terraform, covering code organization, security, performance, and testing.  Adherence to these guidelines ensures maintainable, secure, and efficient infrastructure code.
 globs: "**/*.tf"
 __meta__type: guideline
-__meta__service: terraform
+__meta__service: Terraform
 __meta__tags: ["aws","terraform","infrastructure","best-practices","security"]
 ---
 # AWS Development Best Practices using Terraform
@@ -96,7 +96,7 @@ Example:
     module "lambda" {
         source = "github.com/terraform-aws-modules/terraform-aws-lambda.git?ref=e78cdf1f82944897ca6e30d6489f43cf24539374" # --> v4.18.0
     }
-    
+
 
 ### 1.4 Component Architecture
 

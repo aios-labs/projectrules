@@ -2,7 +2,7 @@
 description: This rule provides comprehensive guidance for Next.js development, covering code organization, performance, security, testing, and common pitfalls. It helps developers build robust, scalable, and maintainable Next.js applications by adhering to community-accepted best practices and coding standards.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: nextjs
+__meta__framework: NextJS
 __meta__tags: ["nextjs","performance","security","testing","code-organization"]
 ---
 # Next.js Best Practices

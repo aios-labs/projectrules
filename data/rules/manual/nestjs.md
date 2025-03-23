@@ -2,14 +2,14 @@
 description: This rule provides comprehensive guidance on NestJS best practices, coding standards, and architectural patterns. It aims to help developers build scalable, maintainable, and performant NestJS applications by covering code organization, security, testing, and other essential aspects.
 globs: "**/*.ts"
 __meta__type: guideline
-__meta__framework: nestjs
+__meta__framework: NestJS
 __meta__tags: ["nestjs","best-practices","architecture","scalability","security"]
 ---
 - **Code Organization and Structure:**
   - **Directory Structure:**
     - Adopt a modular structure that reflects the application's domain or features. A common approach includes organizing code into modules, services, controllers, DTOs, and entities, each in their own directory.
     - Example:
-      
+
       src/
       ├── app.module.ts
       ├── auth/
@@ -34,7 +34,7 @@ __meta__tags: ["nestjs","best-practices","architecture","scalability","security"
       │   │   └── logging.interceptor.ts
       │   └── ...
       └── main.ts
-      
+
   - **File Naming Conventions:**
     - Use descriptive and consistent naming conventions.  Prefix files based on their role (e.g., `user.controller.ts`, `auth.service.ts`, `create-user.dto.ts`).
     - Use PascalCase for classes and interfaces (e.g., `UserService`, `CreateUserDto`).

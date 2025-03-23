@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices and coding standards for Nuxt.js projects, covering code organization, performance, security, testing, and common pitfalls. It aims to ensure maintainable, scalable, and secure Nuxt.js applications.
 globs: "**/*.{vue,js,ts,mjs,mts,jsx,tsx,config.js,config.ts}"
 __meta__type: guideline
-__meta__framework: nuxtjs
+__meta__framework: NuxtJS
 __meta__tags: ["nuxtjs","eslint","pinia","seo","testing"]
 ---
 - **Enable ESLint support:** Use the `@nuxt/eslint` module for project-aware ESLint configuration. This ensures code quality and consistency.

@@ -2,7 +2,7 @@
 description: Comprehensive guidelines for Vue.js development, covering code structure, performance, security, testing, and tooling best practices. This rule provides actionable guidance to enhance code quality, maintainability, and developer productivity in Vue.js projects.
 globs: "**/*.vue, **/*.js, **/*.ts"
 __meta__type: guideline
-__meta__framework: vue
+__meta__framework: Vue
 __meta__tags: ["vue","best-practices","code-quality","performance","testing"]
 ---
 # Vue.js Best Practices and Coding Standards
@@ -14,7 +14,7 @@ This document outlines best practices for Vue.js development, covering various a
 ### 1.1. Directory Structure
 
 *   **Component-Based Structure:** Organize components into logical folders based on their functionality or feature. This improves code readability and maintainability.
-    
+
     src/
     ├── components/
     │   ├── Button/
@@ -38,9 +38,9 @@ This document outlines best practices for Vue.js development, covering various a
     │   │   └── ...
     ├── App.vue
     └── main.js
-    
+
 *   **Feature-Based Structure:** Alternatively, organize files by feature, grouping components, routes, and store modules related to a specific feature.
-    
+
     src/
     ├── features/
     │   ├── user-profile/
@@ -55,7 +55,7 @@ This document outlines best practices for Vue.js development, covering various a
     │   └── ...
     ├── App.vue
     └── main.js
-    
+
 
 ### 1.2. File Naming Conventions
 

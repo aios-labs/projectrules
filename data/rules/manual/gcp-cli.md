@@ -2,7 +2,7 @@
 description: Provides guidelines for using gcp-cli, including best practices for scripting, configuration management, security, and performance. Focuses on automation, predictable output, and secure authentication within Google Cloud environments.
 globs: "**/*.{sh,yaml,tf,py}"
 __meta__type: guideline
-__meta__service: gcp
+__meta__service: GPC
 __meta__tags: ["gcp-cli","scripting","configuration-management","security","automation"]
 ---
 - **Scripting Best Practices**:

@@ -2,7 +2,7 @@
 description: Comprehensive coding standards, best practices, and architectural guidelines for Python backend development with the Bottle microframework, designed to improve code quality, maintainability, and security.
 globs: "**/*.py"
 __meta__type: guideline
-__meta__framework: bottle
+__meta__framework: Bottle
 __meta__tags: ["python","bottle","backend","code-quality","security"]
 ---
 # Bottle Framework Best Practices

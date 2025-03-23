@@ -2,7 +2,7 @@
 description: Comprehensive guidelines for Azure Pipelines, covering code structure, security, performance, testing, and deployment. Provides actionable advice for developers working with Azure Pipelines YAML definitions to enhance code quality and CI/CD processes.
 globs: "**/*.{yml,yaml}"
 __meta__type: guideline
-__meta__service: azure
+__meta__service: Azure
 __meta__tags: ["azure-pipelines","CI/CD","YAML","security","deployment"]
 ---
 - # General Guidelines

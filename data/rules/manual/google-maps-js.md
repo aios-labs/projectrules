@@ -2,7 +2,7 @@
 description: This rule provides guidelines for Google Maps JavaScript API development, covering code organization, performance, security, testing, and common pitfalls. It promotes best practices to ensure efficient, secure, and maintainable map applications.
 globs: "**/*.{js,jsx,ts,tsx,html,css}"
 __meta__type: guideline
-__meta__service: google-maps
+__meta__service: Google Maps
 __meta__tags: ["javascript","api","best-practices","performance","security"]
 ---
 # Google Maps JavaScript API Best Practices

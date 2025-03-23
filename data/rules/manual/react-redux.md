@@ -2,7 +2,7 @@
 description: Enforces best practices for structuring and maintaining React-Redux applications, focusing on code organization, performance, and maintainability. This rule provides guidelines for developers to write efficient, scalable, and testable React-Redux code.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: react
+__meta__framework: React
 __meta__tags: ["react","redux","state-management","best-practices","code-organization"]
 ---
 # React-Redux Best Practices
@@ -92,7 +92,7 @@ src/
 
       return { count, handleIncrement, handleDecrement };
     };
-    
+
 *   **Redux Toolkit:** Utilize Redux Toolkit to simplify Redux setup and reduce boilerplate code.  Redux Toolkit provides utilities for creating reducers, actions, and the store.
 
 ### 2.2. Recommended Approaches

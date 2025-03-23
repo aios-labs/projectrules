@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices for developing Qwik applications, covering code organization, performance, security, testing, and common pitfalls. It aims to guide developers in writing maintainable, efficient, and secure Qwik code.
 globs: "**/*.ts?(x)"
 __meta__type: guideline
-__meta__framework: qwik
+__meta__framework: Qwik
 __meta__tags: ["qwik","best-practices","code-organization","performance","security"]
 ---
 # Qwik Library Best Practices

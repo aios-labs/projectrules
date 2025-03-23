@@ -2,7 +2,7 @@
 description: This rule outlines comprehensive best practices for Laravel development, covering coding standards, security, performance, and testing to ensure maintainable, efficient, and secure applications. It provides guidelines for code organization, common patterns, performance considerations, security best practices, testing approaches, common pitfalls, and tooling.
 globs: "**/*.php"
 __meta__type: guideline
-__meta__framework: laravel
+__meta__framework: Laravel
 __meta__tags: ["laravel","coding-standards","security","performance","testing"]
 ---
 - Adhere to PSR coding standards (PSR-1, PSR-2, PSR-12).

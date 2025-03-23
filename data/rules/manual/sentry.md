@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices for integrating and utilizing Sentry in your projects. It covers code organization, performance, security, testing, and common pitfalls when using Sentry for error tracking and performance monitoring.
 globs: "**/*.{js,jsx,ts,tsx,py,java,kt,swift,go,rb,php,cs,cpp,c,m,mm,clj,cljs,scala,groovy,lua,erl,hrl,fs,fsi,vb,vba,sh,bash,zsh,ps1,psm1,sql,html,htm,css,scss,less,graphql,gql}"
 __meta__type: guideline
-__meta__service: sentry
+__meta__service: Sentry
 __meta__tags: ["sentry","error-tracking","performance-monitoring","best-practices","integration"]
 ---
 - Ensure that your codebase is connected to Sentry, with source code management integrations (e.g., GitHub, GitLab, Bitbucket) and source maps properly configured. This enables Sentry to link errors to specific lines of code, dramatically improving debugging efficiency.

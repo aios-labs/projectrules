@@ -2,7 +2,7 @@
 description: This rule provides guidelines and best practices for developing efficient, maintainable, and robust 3D web applications using Three.js. It covers aspects like code organization, performance optimization, security, testing, and common pitfalls to ensure a high-quality development experience.
 globs: "**/*.{js,ts,jsx,tsx,mjs,html}"
 __meta__type: guideline
-__meta__framework: three-js
+__meta__framework: Three.js
 __meta__tags: ["three-js","3d","webgl","javascript","graphics"]
 ---
 # Three.js Best Practices and Coding Standards

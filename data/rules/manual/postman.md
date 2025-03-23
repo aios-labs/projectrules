@@ -2,7 +2,7 @@
 description: This rule provides best practices for effectively using Postman for API testing, covering code organization, common patterns, performance, security, testing, and tooling to ensure robust and maintainable API tests.
 globs: "**/*.postman_collection.json"
 __meta__type: guideline
-__meta__service: postman
+__meta__service: Postman
 __meta__tags: ["api testing","postman","best practices","code organization","performance"]
 ---
 # Postman API Testing Best Practices
@@ -16,7 +16,7 @@ Effective organization is crucial for maintainability and collaboration. While P
 - **Workspaces:** Utilize workspaces to separate projects and collections logically. Different workspaces can represent different projects, teams, or stages of development.
 - **Collections:** Group related API requests into collections. Each collection should represent a specific feature or API domain.
 - **Folders:** Organize requests within collections using folders. Folders can represent different workflows or API endpoints. For example:
-  
+
   MyProject
   └── Collections
       └── User Authentication
@@ -24,7 +24,7 @@ Effective organization is crucial for maintainability and collaboration. While P
           ├── Login User
           ├── Forgot Password
           └── Reset Password
-  
+
 - **Environment Variables:** Use environments to manage different configurations (development, staging, production) without hardcoding sensitive information.
 - **File Naming Conventions:** Use consistent and descriptive names for collections, folders, and requests.
   - `Collection`: `[ProjectName] - [APIDomain] API Tests` (e.g., `ECommerce - User Authentication API Tests`)

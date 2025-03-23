@@ -2,7 +2,7 @@
 description: Enforces Riverpod library best practices for Flutter applications.  This rule provides guidance on code organization, performance, testing, and common pitfalls when using Riverpod.
 globs: "**/*.dart"
 __meta__type: guideline
-__meta__framework: flutter
+__meta__framework: Flutter
 __meta__tags: ["riverpod","state-management","flutter","best-practices","code-organization"]
 ---
 - **Core Principles:**
@@ -13,7 +13,7 @@ __meta__tags: ["riverpod","state-management","flutter","best-practices","code-or
 - **Code Organization and Structure:**
   - **Directory Structure:**  Adopt a feature-based directory structure.  Group related files (providers, widgets, models, services) into dedicated directories representing specific features or modules. For example:
 
-    
+
     lib/
     ├── features/
     │   ├── authentication/
@@ -34,7 +34,7 @@ __meta__tags: ["riverpod","state-management","flutter","best-practices","code-or
     │   └── services/
     │       └── api_service.dart
     └── main.dart
-    
+
   - **File Naming Conventions:**  Use descriptive and consistent file names. For example:
     - `feature_name_screen.dart` (for widgets/screens)
     - `feature_name_service.dart` (for services)

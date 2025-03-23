@@ -2,7 +2,7 @@
 description: This rule file outlines best practices for developing with DuckDB, covering code organization, performance optimization, security considerations, and testing strategies. It aims to improve code quality, maintainability, and overall project health when using DuckDB.
 globs: "**/*.{sql,ddl,md,duckdb}"
 __meta__type: guideline
-__meta__service: duckdb
+__meta__service: DuckDB
 __meta__tags: ["duckdb","performance","security","testing","code-quality"]
 ---
 # DuckDB Best Practices and Coding Standards
@@ -27,7 +27,7 @@ This document provides guidelines and best practices for developing with DuckDB.
 
 *   **Example:**
 
-    
+
     my_duckdb_project/
     ├── .cursor/
     │   └── rules.mdc
@@ -55,7 +55,7 @@ This document provides guidelines and best practices for developing with DuckDB.
     ├── Makefile
     ├── README.md
     └── .gitignore
-    
+
 
 ### 1.2. File Naming Conventions
 

@@ -2,7 +2,7 @@
 description: Comprehensive best practices and coding standards for projects using the openai library, covering code structure, performance, security, and common pitfalls.
 globs: "**/*.py"
 __meta__type: guideline
-__meta__service: openai
+__meta__service: OpenAI
 __meta__tags: ["ai","ml","llm","api"]
 ---
 # openai Library Best Practices and Coding Standards

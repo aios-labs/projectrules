@@ -2,7 +2,7 @@
 description: Comprehensive guidelines for developing robust and maintainable web applications with the Rocket web framework, covering code organization, security, performance, testing, and more.
 globs: "**/*.rs"
 __meta__type: guideline
-__meta__framework: rocket
+__meta__framework: Rocket
 __meta__tags: ["rust","web-development","code-organization","security","performance"]
 ---
 - **Code Organization and Structure:**

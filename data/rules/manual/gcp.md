@@ -2,7 +2,7 @@
 description: This rule provides best practices for developing and managing infrastructure and applications on Google Cloud Platform (GCP), encompassing code organization, security, performance, and deployment strategies.
 globs: "**/*.{tf,py,js,go,java,proto,sh,yaml,yml}"
 __meta__type: guideline
-__meta__service: gcp
+__meta__service: GPC
 __meta__tags: ["terraform","cloud-functions","cloud-pubsub","cloud-storage","cloud-sql"]
 ---
 ---

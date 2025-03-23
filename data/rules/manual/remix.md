@@ -2,7 +2,7 @@
 description: This rule file provides comprehensive best practices for Remix development, covering code organization, performance, security, testing, and more. It aims to guide developers in building maintainable, scalable, and secure Remix applications.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: remix
+__meta__framework: Remix
 __meta__tags: ["remix","best-practices","code-organization","performance","security"]
 ---
 ## Remix Best Practices and Coding Standards

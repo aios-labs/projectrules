@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices for developing with Elasticsearch, covering code organization, performance, security, testing, and common pitfalls, ensuring efficient and maintainable Elasticsearch applications. These practices apply broadly across languages interacting with Elasticsearch.
 globs: "**/*.{py,js,java,go,ts,kt,scala,rb,php,rs,c,cpp,cs,swift,m,h}"
 __meta__type: guideline
-__meta__service: elasticsearch
+__meta__service: Elasticsearch
 __meta__tags: ["elasticsearch","best-practices","performance","security","testing"]
 ---
 - # Elasticsearch Library Best Practices

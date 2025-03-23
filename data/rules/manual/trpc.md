@@ -2,7 +2,7 @@
 description: This rule provides comprehensive guidance on tRPC best practices, covering code organization, performance, security, testing, and common pitfalls to ensure robust and maintainable tRPC applications.
 globs: "**/*.{ts,tsx}"
 __meta__type: guideline
-__meta__framework: trpc
+__meta__framework: tRPC
 __meta__tags: ["trpc","typescript","best-practices","code-organization","security"]
 ---
 # tRPC Best Practices: A Comprehensive Guide
@@ -15,7 +15,7 @@ This document outlines best practices for developing robust, maintainable, and e
 
 *   **Feature-Based Organization:** Organize your code around features or modules, rather than technical layers (e.g., `components`, `utils`, `services`).  This promotes modularity and maintainability. For example:
 
-    
+
     src/
     ├── features/
     │   ├── user/
@@ -39,7 +39,7 @@ This document outlines best practices for developing robust, maintainable, and e
     │   │   └── root.ts   // Root tRPC router combining all feature routers
     │   └── context.ts // tRPC context creation
     └── index.ts      // Server entry point
-    
+
 
 *   **Separation of Concerns:**  Separate concerns into different directories and modules.  For instance, keep your tRPC router definitions separate from your business logic and data access layers.
 *   **Grouping Similar Functionality:**  Keep related files together within a feature directory.  This makes it easier to understand and maintain the code.
@@ -66,7 +66,7 @@ This document outlines best practices for developing robust, maintainable, and e
 
 *   **Route-Based Splitting:** Split your code based on routes. This allows you to load only the code that is needed for a specific route. This can be easily achieved with React's `lazy` and `Suspense` APIs.
 *   **Component-Based Splitting:** Split your code based on components. This allows you to load only the code that is needed for a specific component.
-*   **Dynamic Imports:** Use dynamic imports to load code on demand. This can be useful for loading large libraries or components that are not needed immediately. 
+*   **Dynamic Imports:** Use dynamic imports to load code on demand. This can be useful for loading large libraries or components that are not needed immediately.
 
 ## 2. Common Patterns and Anti-patterns
 
@@ -102,7 +102,7 @@ This document outlines best practices for developing robust, maintainable, and e
     });
 
     export type AppRouter = typeof appRouter;
-    
+
 
 *   **Middleware Chaining:** Use middleware to handle cross-cutting concerns such as authentication, authorization, and logging. Middleware can be chained to create a pipeline of operations.
 
@@ -126,7 +126,7 @@ This document outlines best practices for developing robust, maintainable, and e
     export const router = t.router;
     export const publicProcedure = t.procedure;
     export const protectedProcedure = t.procedure.use(isAuthed);
-    
+
 
 *   **Input Validation with Zod:** Use Zod for input validation to ensure that data received from the client is valid. This helps to prevent errors and security vulnerabilities.
 
@@ -139,7 +139,7 @@ This document outlines best practices for developing robust, maintainable, and e
       .mutation(async ({ input }) => {
         // ... create a new user
       });
-    
+
 
 ### 2.2 Recommended Approaches for Common Tasks
 

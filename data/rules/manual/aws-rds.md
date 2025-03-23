@@ -2,7 +2,7 @@
 description: This rule provides best practices and coding standards for developing applications that interact with AWS RDS. It covers code organization, security, performance, testing, and common pitfalls.
 globs: "**/*.{sql,js,py,java,tf,yaml,yml}"
 __meta__type: guideline
-__meta__service: aws
+__meta__service: AWS
 __meta__tags: ["aws","rds","database","sql","cloud"]
 ---
 # AWS RDS Best Practices and Coding Standards

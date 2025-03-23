@@ -2,7 +2,7 @@
 description: TypeScript coding standards and best practices
 globs: "**/*.ts"
 __meta__author: jorgemasta
-__meta__type: best-practice
+__meta__type: guideline
 __meta__tags: ["TypeScript"]
 ---
 

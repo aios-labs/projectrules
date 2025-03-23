@@ -2,7 +2,7 @@
 description: Enforces Vercel's recommended coding style, optimization strategies, and security best practices. This guide helps developers build performant, secure, and maintainable applications on the Vercel platform.
 globs: "**/*.{js,jsx,ts,tsx,md,mdx,json,yml,yaml,html,css,scss,sass}"
 __meta__type: guideline
-__meta__service: vercel
+__meta__service: Vercel
 __meta__tags: ["vercel","eslint","typescript","nextjs","performance"]
 ---
 - Adhere to Vercel's Style Guide: Utilize linting and styling tools configured according to the Vercel Style Guide for consistent code formatting and style.  Use `@file vercel_style_guide.mdc` to include style guide details.

@@ -2,7 +2,7 @@
 description: This rule provides guidelines for Firebase library usage, covering code organization, performance, security, testing, and common pitfalls. It aims to ensure efficient, secure, and maintainable Firebase projects.
 globs: "**/*.{js,jsx,ts,tsx,html,css,scss,vue,swift,kt,java,py,go,rb,php,c,cpp,cs}"
 __meta__type: guideline
-__meta__service: firebase
+__meta__service: Firebase
 __meta__tags: ["firebase","best-practices","security","performance","testing"]
 ---
 ---
@@ -17,7 +17,7 @@ This document outlines best practices for developing applications using the Fire
     - Adopt a modular structure to separate concerns.
     - Organize code based on features or domains (e.g., `auth`, `database`, `storage`).
     - Common directory structure:
-        
+
         project-root/
         ├── src/
         │   ├── components/
@@ -43,7 +43,7 @@ This document outlines best practices for developing applications using the Fire
         ├── .env (Environment variables)
         ├── firebase.json (Firebase configuration)
         └── package.json
-        
+
 - **File Naming Conventions:**
     - Use descriptive and consistent names.
     - Component files: `ComponentName.js` or `ComponentName.jsx` (e.g., `Login.js`).
@@ -75,7 +75,7 @@ This document outlines best practices for developing applications using the Fire
         const storage = getStorage(app);
 
         export { auth, db, storage };
-        
+
     - Use environment variables to store sensitive Firebase configuration.
 - **Component Architecture Recommendations:**
     - Favor functional components with hooks (React) for managing state and side effects.
@@ -88,11 +88,11 @@ This document outlines best practices for developing applications using the Fire
         javascript
         // Lazy load a component
         const MyComponent = React.lazy(() => import('./MyComponent'));
-        
+
         <React.Suspense fallback={<div>Loading...</div>}>
           <MyComponent />
         </React.Suspense>
-        
+
 
 ### 2. Common Patterns and Anti-patterns
 
@@ -142,7 +142,7 @@ This document outlines best practices for developing applications using the Fire
             </AuthContext.Provider>
           );
         };
-        
+
     - **Third-Party Libraries:** Consider Redux, Zustand, or Recoil for complex state management needs.
 - **Error Handling Patterns:**
     - Implement try-catch blocks for Firebase operations.
@@ -163,7 +163,7 @@ This document outlines best practices for developing applications using the Fire
             throw error;
           }
         };
-        
+
     - Provide informative error messages to the user.
     - Log errors for debugging and monitoring.
 
@@ -192,7 +192,7 @@ This document outlines best practices for developing applications using the Fire
     - Example for images:
         html
         <img src="image.jpg" loading="lazy" alt="Image" />
-        
+
 
 ### 4. Security Best Practices
 
@@ -236,7 +236,7 @@ This document outlines best practices for developing applications using the Fire
             get: jest.fn().mockResolvedValue({})
           }
         }));
-        
+
     - **Test authentication logic:** Verify authentication flows and error handling.
     - **Use Jest, Mocha, or other testing frameworks.**
 - **Integration Testing:**

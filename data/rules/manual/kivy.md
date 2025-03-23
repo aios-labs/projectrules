@@ -2,7 +2,7 @@
 description: This rule file outlines best practices for Kivy UI development, including code organization, performance, security, and testing. Adhering to these guidelines ensures maintainable, efficient, and secure Kivy applications.
 globs: "**/*.{py,kv}"
 __meta__type: guideline
-__meta__framework: kivy
+__meta__framework: Kivy UI
 __meta__tags: ["kivy","ui-development","best-practices","code-organization","testing"]
 ---
 # Kivy Development Best Practices

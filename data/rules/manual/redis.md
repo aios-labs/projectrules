@@ -2,7 +2,6 @@
 description: This rule provides best practices for working with Redis, covering code organization, performance, security, testing, and common pitfalls to ensure efficient and reliable usage. It applies to any language file interacting with Redis.
 globs: "**/*.{py,js,go,java,c,cpp,rb,php,ts,rs,kt,scala}"
 __meta__type: guideline
-__meta__service: redis
 __meta__tags: ["redis","performance","security","testing","best-practices"]
 ---
 - **General Best Practices**
@@ -54,7 +53,7 @@ __meta__tags: ["redis","performance","security","testing","best-practices"]
   - **Unit Tests:** Write unit tests to verify the functionality of your code that interacts with Redis.  Use mocking or stubbing to isolate the Redis interactions from the rest of the code.
   - **Integration Tests:** Write integration tests to verify the interaction between your code and the Redis server.  Use a dedicated test Redis instance for integration tests.
   - **End-to-End Tests:** Write end-to-end tests to verify the entire application flow, including the interaction with Redis.  This ensures that the application works correctly in a realistic environment.
-  - **Data Population:** When testing, consider populating your redis database with a representative set of data. 
+  - **Data Population:** When testing, consider populating your redis database with a representative set of data.
   - **Test Organization:** Organize tests logically, separating unit, integration, and end-to-end tests into different directories or modules.
   - **Mocking and Stubbing:** Use mocking and stubbing frameworks to simulate Redis behavior during unit tests.
 

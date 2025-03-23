@@ -2,7 +2,7 @@
 description: This rule outlines best practices for coding standards, observability, and effective use of the Datadog library in Python projects. It covers coding style, metric/tag naming, dashboard design, security, and performance optimization.
 globs: "**/*.py"
 __meta__type: guideline
-__meta__service: datadog
+__meta__service: Datadog
 __meta__tags: ["python","observability","datadog","coding-standards","performance-optimization"]
 ---
 - **Coding Standards**
@@ -41,7 +41,7 @@ __meta__tags: ["python","observability","datadog","coding-standards","performanc
 mypy-deps = [
     "types-mock==0.1.5",
     ]
-    
+
   - Consider using flags like `--check-untyped-defs` and `--disallow-untyped-defs` for stricter type checking. Configure the files to be checked with mypy.ini file.
 
 - **Metric and Tag Naming Conventions**

@@ -2,7 +2,7 @@
 description: This rule provides comprehensive guidelines for Angular development, covering coding standards, best practices, performance optimization, security considerations, and testing approaches to ensure maintainable, scalable, and high-performing applications.
 globs: "**/*.{ts,html,scss,css}"
 __meta__type: guideline
-__meta__framework: angular
+__meta__framework: Angular
 __meta__tags: ["angular","best-practices","coding-standards","performance","security"]
 ---
 # Angular Best Practices and Coding Standards
@@ -19,7 +19,7 @@ This document outlines comprehensive best practices and coding standards for dev
 - **Lazy-loaded Modules:** Group related features into lazy-loaded modules to improve initial load time.
 - **Directory structure example:**
 
-  
+
   src/
   ├── app/
   │   ├── core/
@@ -41,7 +41,7 @@ This document outlines comprehensive best practices and coding standards for dev
   │   ├── app.component.ts
   │   └── app.module.ts
   └── ...
-  
+
 
 ### 1.2. File Naming Conventions
 

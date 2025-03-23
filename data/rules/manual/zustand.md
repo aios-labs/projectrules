@@ -2,7 +2,7 @@
 description: This rule provides guidelines for using Zustand, a simple and unopinionated state management library, in React applications. It covers best practices for code organization, performance optimization, testing, and common pitfalls to avoid.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: react
+__meta__framework: React
 __meta__tags: ["zustand","state-management","react","best-practices","performance-optimization"]
 ---
 # Zustand Best Practices
@@ -549,7 +549,7 @@ interface FishSlice {
 
 const createBearSlice: StateCreator<BearSlice> = (set) => ({
   bears: 0,
-  addBear: () => set((state) => ({ bears: state.bears + 1 })), 
+  addBear: () => set((state) => ({ bears: state.bears + 1 })),
   eatFish: () => set((state) => ({fishes: state.fishes -1}))
 });
 

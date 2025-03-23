@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices and coding standards for developing robust, maintainable, and performant Spring Boot applications, covering code structure, performance, security, testing, and common pitfalls.
 globs: "**/*.java"
 __meta__type: guideline
-__meta__framework: springboot
+__meta__framework: Spring Boot
 __meta__tags: ["springboot","java","best-practices","coding-standards","architecture"]
 ---
 # Spring Boot Best Practices and Coding Standards

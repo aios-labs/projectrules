@@ -2,7 +2,7 @@
 description: Comprehensive guide to React best practices, covering code organization, performance, security, testing, and common pitfalls. Adhering to these guidelines helps developers build maintainable, scalable, and high-performing React applications.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: react
+__meta__framework: React
 __meta__tags: ["react","best-practices","code-organization","performance","testing"]
 ---
 # React Best Practices: A Comprehensive Guide

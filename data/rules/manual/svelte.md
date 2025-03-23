@@ -2,7 +2,7 @@
 description: Comprehensive Svelte best practices covering code structure, performance, security, testing, and common pitfalls. This rule provides guidance on writing maintainable, efficient, and secure Svelte applications.
 globs: "**/*.svelte"
 __meta__type: guideline
-__meta__framework: svelte
+__meta__framework: Svelte
 __meta__tags: ["svelte","best-practices","code-structure","performance","security"]
 ---
 - **Manipulate the DOM with HTML:** Utilize Svelte's HTML-centric approach to manipulate the DOM.

@@ -2,7 +2,7 @@
 description: This rule provides best practices for developing with Microsoft Teams, covering code organization, performance, security, testing, and common pitfalls. Adhering to these guidelines will ensure robust, maintainable, and secure Teams applications.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__service: microsoft-teams
+__meta__service: Microsoft Teams
 __meta__tags: ["microsoft-teams","code-organization","performance","security","testing"]
 ---
 - # Code Organization and Structure

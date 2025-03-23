@@ -2,7 +2,7 @@
 description: This rule file provides comprehensive best practices, coding standards, and security guidelines for developing applications using Amazon S3. It aims to ensure secure, performant, and maintainable S3 integrations.
 globs: "**/*S3*.{js,ts,jsx,tsx,py,java,go,csharp}"
 __meta__type: guideline
-__meta__service: amazon-s3
+__meta__service: Amazon S3
 __meta__tags: ["aws","cloud-storage","security","best-practices","performance"]
 ---
 - Always disable public access to S3 buckets unless explicitly needed. Use AWS Identity and Access Management (IAM) policies and bucket policies for access control instead of Access Control Lists (ACLs), which are now generally deprecated.
@@ -99,7 +99,7 @@ If you have a large application using S3, consider using code splitting to reduc
 
 *   **Strategy Pattern:**  Use a strategy pattern to handle different storage classes or encryption methods.
 *   **Factory Pattern:**  Use a factory pattern to create S3 clients with different configurations.
-*   **Singleton Pattern:** Use a singleton pattern if you want to use one s3 instance for all the s3 interactions. 
+*   **Singleton Pattern:** Use a singleton pattern if you want to use one s3 instance for all the s3 interactions.
 
 #### 2.2. Recommended Approaches for Common Tasks
 
@@ -171,7 +171,7 @@ def upload_file(file_name, bucket, object_name=None):
 #### 3.1. Optimization Techniques
 
 *   **Use S3 Transfer Acceleration:** If you are uploading or downloading files from a geographically distant location, use S3 Transfer Acceleration to improve performance. S3 Transfer Acceleration utilizes Amazon CloudFront's globally distributed edge locations.
-*   **Use multipart upload:** For large files, use multipart upload to upload files in parallel. The documentation states the best practice is to use this for files larger than 5MB. 
+*   **Use multipart upload:** For large files, use multipart upload to upload files in parallel. The documentation states the best practice is to use this for files larger than 5MB.
 *   **Enable gzip compression:**  Compress objects before uploading them to S3 to reduce storage costs and improve download times.  Set the `Content-Encoding` header to `gzip` when uploading compressed objects.
 *   **Use HTTP/2:** Enable HTTP/2 on your S3 bucket to improve performance.
 *   **Optimize object sizes:**  Store related data in a single object to reduce the number of requests to S3.

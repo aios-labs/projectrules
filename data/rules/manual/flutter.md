@@ -2,7 +2,7 @@
 description: Comprehensive guidelines and best practices for Flutter development, covering code organization, performance optimization, security, testing, and tooling.
 globs: "**/*.dart"
 __meta__type: guideline
-__meta__framework: flutter
+__meta__framework: Flutter
 __meta__tags: ["flutter","development","best-practices","code-organization","performance-optimization"]
 ---
 - Adhere to the official Flutter style guide.  This forms the foundation for maintainable and consistent code.
@@ -14,7 +14,7 @@ __meta__tags: ["flutter","development","best-practices","code-organization","per
     - **`lib/` (Source Code):**
         -  Use a feature-based structure, grouping related components into modules.
         -  Example:
-           
+
            lib/
            ├── auth/
            │   ├── models/
@@ -38,7 +38,7 @@ __meta__tags: ["flutter","development","best-practices","code-organization","per
            │   └── utils/
            ├── main.dart
            └── app.dart
-           
+
     - **`test/` (Tests):** Mirror the `lib/` structure for easy test discovery.
     - **`android/`, `ios/`, `web/`, `macos/`, `windows/`, `linux/` (Platform-Specific Code):**  Contain platform-specific native code. Limit direct modification unless necessary; utilize Flutter's platform channels.
     - **`assets/` (Assets):** Store images, fonts, and other static resources.  Organize subfolders by type (e.g., `images/`, `fonts/`, `data/`).  Use `pubspec.yaml` to declare assets.

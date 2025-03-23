@@ -2,7 +2,7 @@
 description: This rule provides comprehensive guidance for using MobX effectively, covering best practices for code organization, performance, testing, and common pitfalls. It aims to ensure efficient and maintainable state management in React and other JavaScript applications using MobX.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: react
+__meta__framework: React
 __meta__tags: ["mobx","state-management","javascript","react","best-practices"]
 ---
 # MobX Best Practices and Coding Standards
@@ -15,7 +15,7 @@ This document outlines the best practices for using MobX in your projects. Follo
 
 *   **Feature-Based Organization:** Organize your code by feature rather than by file type (e.g., components, stores, utils). This promotes better modularity and easier navigation.
 
-    
+
     src/
     ├── features/
     │   ├── user-profile/
@@ -32,7 +32,7 @@ This document outlines the best practices for using MobX in your projects. Follo
     │   │   └── ...
     ├── app.js
     └── ...
-    
+
 
 *   **Dedicated `stores` Directory:** Place all your MobX stores in a dedicated `stores` directory to clearly separate state management logic from the rest of your application.
 
@@ -81,7 +81,7 @@ This document outlines the best practices for using MobX in your projects. Follo
     };
 
     export default UserProfile;
-    
+
 
 *   **Functional Components with Hooks:** Use functional components with the `useObserver` hook (or `observer` from `mobx-react-lite`) for better performance and readability.
 
@@ -102,7 +102,7 @@ This document outlines the best practices for using MobX in your projects. Follo
     });
 
     export default UserProfile;
-    
+
 
 *   **Component Composition:** Favor component composition over deep inheritance to create reusable and flexible components.
 
@@ -136,7 +136,7 @@ This document outlines the best practices for using MobX in your projects. Follo
         return this.items.reduce((sum, item) => sum + item.price, 0);
       }
     }
-    
+
 
 *   **Actions:** Use `@action` to modify the state. Actions ensure that state changes are batched and tracked by MobX.  All state modifications should happen within actions to maintain predictability.
 
@@ -162,7 +162,7 @@ This document outlines the best practices for using MobX in your projects. Follo
         this.items.push(item);
       }
     }
-    
+
 
 *   **Reactions:** Use `reaction`, `autorun`, and `when` to react to state changes.  Use `reaction` for side effects that depend on specific observable values, `autorun` for side effects that depend on any observable value, and `when` for one-time side effects.
 
@@ -209,7 +209,7 @@ This document outlines the best practices for using MobX in your projects. Follo
     });
 
     export default Form;
-    
+
 
 *   **Asynchronous Operations:** Use actions to handle asynchronous operations such as API calls. Use `async/await` syntax to simplify asynchronous code.
 
@@ -238,7 +238,7 @@ This document outlines the best practices for using MobX in your projects. Follo
         }
       }
     }
-    
+
 
 ### 2.3 Anti-patterns and Code Smells to Avoid
 
@@ -282,7 +282,7 @@ This document outlines the best practices for using MobX in your projects. Follo
     });
 
     export default MyComponent;
-    
+
 
 *   **`shouldComponentUpdate` (Class Components):**  If you are using class components, implement `shouldComponentUpdate` to prevent unnecessary re-renders.  Compare the previous and current props and state to determine if a re-render is necessary. Consider using `PureComponent`.
 *   **Minimize Re-renders:** Minimize the number of re-renders by optimizing your component structure and using techniques like `useMemo` and `useCallback`.

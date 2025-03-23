@@ -2,14 +2,14 @@
 description: This rule provides comprehensive best practices and coding standards for Expo projects, covering code organization, performance, security, testing, and common pitfalls to ensure maintainable and high-quality applications.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: expo
+__meta__framework: Expo
 __meta__tags: ["expo","react","typescript","state-management","performance"]
 ---
 - **Code Organization and Structure**
   - **Directory Structure:**
     - Adopt a feature-based directory structure, grouping related files (components, hooks, styles, tests) within feature folders.
     - Examples:
-      
+
       src/
       ├── components/
       │   ├── Button/
@@ -34,7 +34,7 @@ __meta__tags: ["expo","react","typescript","state-management","performance"]
       │   └── ...
       ├── App.tsx
       └── index.tsx
-      
+
   - **File Naming Conventions:**
     - Use descriptive and consistent names for files and directories.
     - Component files: `ComponentName.tsx` or `ComponentName.js`
@@ -45,10 +45,10 @@ __meta__tags: ["expo","react","typescript","state-management","performance"]
     - Group related components, hooks, and utilities into modules.
     - Use `index.ts` (or `index.js`) files to export members from a module for easier importing.
     - Example:
-      
+
       // src/components/Button/index.ts
       export { default as Button } from './Button';
-      
+
   - **Component Architecture:**
     - Favor functional components with hooks for managing state and side effects.
     - Separate concerns by creating presentational (UI) and container (logic) components.

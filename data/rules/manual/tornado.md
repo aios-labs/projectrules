@@ -2,7 +2,7 @@
 description: Comprehensive best practices and coding standards for the Tornado framework. This rule provides guidelines on code organization, performance, security, testing, and common pitfalls when developing Tornado applications.
 globs: "**/*.py"
 __meta__type: guideline
-__meta__framework: tornado
+__meta__framework: Tornado
 __meta__tags: ["tornado","best-practices","code-organization","performance","security"]
 ---
 ## 1. Code Organization and Structure

@@ -2,7 +2,7 @@
 description: This rule file outlines best practices for using the boto3 library, including code organization, security, performance, testing, and common pitfalls. It aims to ensure efficient, secure, and maintainable AWS integrations with boto3.
 globs: "**/*.py"
 __meta__type: guideline
-__meta__service: aws
+__meta__service: AWS
 __meta__tags: ["boto3","python","aws","security","performance"]
 ---
 ---
@@ -18,7 +18,7 @@ This document outlines best practices for using the boto3 library in Python for 
   import boto3
   session = boto3.Session()
   s3 = session.client('s3')
-  
+
 - **Avoid Hard-coding Credentials**: Never hard-code AWS credentials in your code. Use environment variables, AWS CLI configuration, IAM roles, or AWS Secrets Manager.
 
   - **Environment Variables**:
@@ -27,19 +27,19 @@ This document outlines best practices for using the boto3 library in Python for 
     aws_access_key_id = os.environ.get('AWS_ACCESS_KEY_ID')
     aws_secret_access_key = os.environ.get('AWS_SECRET_ACCESS_KEY')
     s3 = boto3.client('s3', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
-    
+
 
   - **AWS CLI Configuration**:
     Configure your credentials using the AWS CLI (`aws configure`). Boto3 will automatically pick up the credentials.
 
   - **IAM Roles**: Use IAM roles for EC2 instances or Lambda functions to grant permissions.
-  
+
   - **AWS Secrets Manager**: Securely store and retrieve secrets (like database passwords or API keys) using AWS Secrets Manager, accessible via boto3.
 
 ## 2. Code Organization and Structure
 
 - **Directory Structure**: Organize your project with a clear directory structure.
-  
+
   my_project/
   ├── src/
   │   ├── __init__.py
@@ -59,7 +59,7 @@ This document outlines best practices for using the boto3 library in Python for 
   ├── requirements.txt
   ├── .env
   └── README.md
-  
+
 
 - **File Naming Conventions**: Use descriptive and consistent file names.
   - `s3_utils.py`: Contains S3-related utility functions.
@@ -91,7 +91,7 @@ This document outlines best practices for using the boto3 library in Python for 
 
     factory = AWSClientFactory()
     s3 = factory.create_client('s3')
-    
+
 
   - **Strategy Pattern**: Implement different strategies for handling AWS operations (e.g., different retry mechanisms).
 
@@ -100,11 +100,11 @@ This document outlines best practices for using the boto3 library in Python for 
   - **Uploading Files to S3**: Use `upload_file` or `upload_fileobj` for uploading files to S3.
     python
     s3.upload_file('my_local_file.txt', 'my_bucket', 'my_s3_key.txt')
-    
+
   - **Downloading Files from S3**: Use `download_file` or `download_fileobj` for downloading files from S3.
     python
     s3.download_file('my_bucket', 'my_s3_key.txt', 'my_local_file.txt')
-    
+
 
 - **Anti-patterns**: Avoid common anti-patterns.
 
@@ -129,7 +129,7 @@ This document outlines best practices for using the boto3 library in Python for 
           print('The specified key does not exist.')
       else:
           print(f'An error occurred: {e}')
-  
+
 
 ## 4. Performance Considerations
 
@@ -142,7 +142,7 @@ This document outlines best practices for using the boto3 library in Python for 
     for page in pages:
         for obj in page['Contents']:
             print(obj['Key'])
-    
+
 
   - **Batch Operations**: Use batch operations for efficient data processing.
     python
@@ -155,7 +155,7 @@ This document outlines best practices for using the boto3 library in Python for 
 
     response = bucket.delete_objects(Delete={'Objects': delete_keys})
     print(response)
-    
+
   - **Transfer Acceleration**: For faster uploads over long distances, enable S3 Transfer Acceleration.
     python
     s3 = boto3.client('s3',
@@ -163,7 +163,7 @@ This document outlines best practices for using the boto3 library in Python for 
             s3={'use_accelerate_endpoint': True}
         )
     )
-    
+
 
 - **Memory Management**: Be mindful of memory usage when working with large files or datasets.
 
@@ -205,7 +205,7 @@ This document outlines best practices for using the boto3 library in Python for 
             'SSEKMSKeyId': 'your-kms-key-id'
         }
     )
-    
+
 
   - **Secure Transport**: Enforce HTTPS-only access by applying a bucket policy.
   - **Versioning**: Enable S3 Versioning for recovery.
@@ -253,7 +253,7 @@ This document outlines best practices for using the boto3 library in Python for 
   if __name__ == '__main__':
       unittest.main()
 
-  
+
 
 ## 7. Common Pitfalls and Gotchas
 

@@ -2,7 +2,7 @@
 description: This rule file outlines best practices for integrating Stripe's payment processing services into web and mobile applications, focusing on security, performance, and maintainability. It provides guidelines on coding standards, error handling, and testing to ensure a robust and reliable Stripe integration.
 globs: "**/*.{js,jsx,ts,tsx,py,rb,php,java,go}"
 __meta__type: guideline
-__meta__service: stripe
+__meta__service: Stripe
 __meta__tags: ["stripe","payments","api","e-commerce","security"]
 ---
 # Stripe Integration Best Practices

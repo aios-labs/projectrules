@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices for developing with Shadcn UI, covering code organization, performance, security, and testing.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: shadcn
+__meta__framework: Shadcn
 __meta__tags: ["shadcn","ui","best-practices","react","tailwind"]
 ---
 # Shadcn UI Best Practices

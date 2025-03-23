@@ -2,7 +2,7 @@
 description: This rule provides guidelines for best practices and coding standards when developing applications with Neo4j. It covers aspects from code organization and performance to security and testing.
 globs: "**/*.cypher"
 __meta__type: guideline
-__meta__service: neo4j
+__meta__service: Neo4j
 __meta__tags: ["neo4j","database","graph","nosql","best-practices"]
 ---
 # Neo4j Development Best Practices

@@ -2,7 +2,7 @@
 description: Comprehensive guide for AWS Lambda development, covering best practices for code organization, performance, security, testing, and common pitfalls. Focuses on building robust, scalable, and secure serverless applications using AWS Lambda.
 globs: "**/*.{js,ts,jsx,tsx,py,java,go,c#,cs,ps1,sh}"
 __meta__type: guideline
-__meta__service: aws
+__meta__service: AWS
 __meta__tags: ["aws-lambda","serverless","best-practices","scalability","security"]
 ---
 - **Use Documented APIs Only:** Rely solely on AWS Lambda's documented APIs to ensure compatibility and avoid unexpected behavior. Do not use undocumented or internal APIs.
@@ -23,7 +23,7 @@ __meta__tags: ["aws-lambda","serverless","best-practices","scalability","securit
       - Organize code into logical directories based on functionality (e.g., `src`, `tests`, `utils`).
       - Separate handler logic from core business logic.
       - Example:
-        
+
         my-lambda-function/
         ├── src/
         │   ├── handler.js       # Lambda handler function
@@ -34,7 +34,7 @@ __meta__tags: ["aws-lambda","serverless","best-practices","scalability","securit
         │   └── ...
         ├── package.json         # Dependencies and scripts
         └── ...
-        
+
 
    - **File Naming Conventions:**
       - Use descriptive and consistent file names.
@@ -49,7 +49,7 @@ __meta__tags: ["aws-lambda","serverless","best-practices","scalability","securit
         // src/user-service.js
         export function createUser(userData) { ... }
         export function getUser(userId) { ... }
-        
+
 
    - **Component Architecture:**
       - Design Lambda functions as part of a larger component-based architecture.

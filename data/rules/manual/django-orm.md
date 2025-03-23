@@ -2,7 +2,7 @@
 description: This rule file provides comprehensive best practices for Django's Object-Relational Mapper (ORM), covering code organization, performance, security, testing, and common pitfalls. It aims to guide developers in building efficient, maintainable, and secure Django applications.
 globs: "**/*.py"
 __meta__type: guideline
-__meta__framework: django
+__meta__framework: Django
 __meta__tags: ["django","orm","best-practices","code-organization","security"]
 ---
 ## 1. Code Organization and Structure
@@ -54,7 +54,7 @@ myproject/
 
 ### 1.4. Component Architecture
 
-- **DRY (Don't Repeat Yourself):** Create reusable components such as custom model fields, managers, and querysets.  
+- **DRY (Don't Repeat Yourself):** Create reusable components such as custom model fields, managers, and querysets.
 - **Model Mixins:** Use model mixins to add common functionality to multiple models (e.g., a mixin for soft deletion or timestamping).
 - **Form Abstraction:** Create reusable form classes and widgets for data input and validation.
 - **Template Tags and Filters:** Develop custom template tags and filters to simplify common tasks in templates related to model data.

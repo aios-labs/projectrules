@@ -2,7 +2,7 @@
 description: This rule enforces best practices and coding standards for projects using the Ant Design (antd) UI library within React applications. It covers code organization, performance, security, testing, and common pitfalls to ensure maintainable and efficient applications.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: react
+__meta__framework: React
 __meta__tags: ["ant-design","react","ui-library","best-practices","coding-standards"]
 ---
 # Ant Design (antd) Best Practices and Coding Standards
@@ -255,7 +255,7 @@ export default ErrorBoundary;
 -   **Not using modular imports**:  Importing the entire `antd` library can significantly increase bundle size.
 -   **Ignoring TypeScript errors**: Failing to address TypeScript errors can lead to runtime issues.
 -   **Not handling asynchronous operations correctly**:  Failing to handle promises or async/await can lead to unhandled rejections and unexpected behavior.
--   **Not localizing strings correctly**: Hardcoding strings instead of using `antd` i18n features. 
+-   **Not localizing strings correctly**: Hardcoding strings instead of using `antd` i18n features.
 
 ### 6.2. Edge Cases
 

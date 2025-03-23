@@ -2,7 +2,7 @@
 description: This rule covers best practices for developing, deploying, and maintaining applications using AWS Elastic Container Service (ECS). It includes guidance on code organization, performance, security, testing, and common pitfalls.
 globs: "**/*.{tf,yml,yaml,json,sh,dockerfile}"
 __meta__type: guideline
-__meta__service: aws
+__meta__service: AWS
 __meta__tags: ["aws-ecs","terraform","cloudformation","microservices","containerization"]
 ---
 - **General Principles:**

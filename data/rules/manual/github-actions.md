@@ -2,7 +2,7 @@
 description: This rule provides comprehensive guidelines for GitHub Actions development, covering best practices, coding standards, performance, security, and testing.  It aims to ensure efficient, reliable, secure, and maintainable workflows.
 globs: ".github/workflows/*.yml"
 __meta__type: guideline
-__meta__service: github
+__meta__service: GitHub
 __meta__tags: ["github-actions","best-practices","coding-standards","security","testing"]
 ---
 # GitHub Actions Best Practices and Coding Standards
@@ -18,7 +18,7 @@ This guide provides comprehensive guidelines for developing efficient, reliable,
 -   **Scripts Directory (Optional):** For complex workflows, you might have supporting scripts (e.g., shell scripts, Python scripts). Store these in a `scripts/` directory.
 -   **Example Directory Structure:**
 
-    
+
     .github/
     └── workflows/
         ├── main.yml
@@ -31,7 +31,7 @@ This guide provides comprehensive guidelines for developing efficient, reliable,
     scripts/
         ├── cleanup.sh
         └── build.py
-    
+
 
 ### 1.2 File Naming Conventions
 
@@ -104,7 +104,7 @@ This guide provides comprehensive guidelines for developing efficient, reliable,
 ### 3.1 Optimization Techniques
 
 -   **Caching:**  Use the `actions/cache` action aggressively to cache dependencies and intermediate build artifacts.
--   **Concurrency:** Use concurrency to prevent multiple workflows from running at the same time. 
+-   **Concurrency:** Use concurrency to prevent multiple workflows from running at the same time.
 -   **Parallel Execution:**  Run jobs in parallel to reduce overall execution time.
 -   **Optimized Images:** Optimize images before uploading them to your repository to reduce their size.
 -   **Minify Code:** Minify JavaScript and CSS files to reduce their size.

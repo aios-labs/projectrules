@@ -2,7 +2,7 @@
 description: This rule outlines the best practices and coding standards for developing Elixir applications with the Phoenix framework, covering code organization, performance, security, testing, and common pitfalls.
 globs: "**/*.{ex,exs,eex,leex,sface}"
 __meta__type: guideline
-__meta__framework: phoenix
+__meta__framework: Phoenix
 __meta__tags: ["elixir","phoenix","best-practices","code-organization","performance"]
 ---
 - # Phoenix Framework Best Practices

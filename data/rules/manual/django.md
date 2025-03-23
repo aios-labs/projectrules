@@ -2,7 +2,7 @@
 description: Comprehensive guide to Django best practices covering code organization, performance, security, testing, and common pitfalls. This rule ensures adherence to community standards for maintainable and efficient Django applications.
 globs: "**/*.py"
 __meta__type: guideline
-__meta__framework: django
+__meta__framework: Django
 __meta__tags: ["django","best-practices","code-quality","performance","security"]
 ---
 # Django Best Practices and Coding Standards

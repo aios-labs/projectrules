@@ -2,7 +2,7 @@
 description: This rule file provides best practices, coding standards, and security guidelines for developing, deploying, and maintaining applications using the amazon-ec2 library within the AWS ecosystem. It focuses on infrastructure as code (IaC), resource management, performance, and security considerations for robust and scalable EC2-based solutions.
 globs: "**/*.{tf,json,yml,yaml,py,js,ts,sh,java,go,rb,m}"
 __meta__type: guideline
-__meta__service: aws
+__meta__service: AWS
 __meta__tags: ["amazon-ec2","aws","terraform","iac","security"]
 ---
 - ## General Principles
@@ -17,7 +17,7 @@ __meta__tags: ["amazon-ec2","aws","terraform","iac","security"]
   - **Directory Structure Best Practices:**
     - Adopt a logical directory structure that reflects the architecture of your application and infrastructure.
     - Example:
-      
+
       project-root/
       ├── modules/                  # Reusable infrastructure modules (e.g., VPC, security groups)
       │   ├── vpc/                # VPC module
@@ -40,7 +40,7 @@ __meta__tags: ["amazon-ec2","aws","terraform","iac","security"]
       │   ├── tests/              # Unit and integration tests
       ├── README.md
       └── ...
-      
+
   - **File Naming Conventions:**
     - Use consistent and descriptive file names.
     - Examples:
@@ -77,7 +77,7 @@ __meta__tags: ["amazon-ec2","aws","terraform","iac","security"]
       # Load the module when needed
       my_module = load_module('my_module')
       my_module.my_function()
-      
+
 
 - ## 2. Common Patterns and Anti-patterns
 
@@ -89,7 +89,7 @@ __meta__tags: ["amazon-ec2","aws","terraform","iac","security"]
     - **Creating an EC2 Instance (AWS CLI):**
       bash
       aws ec2 run-instances --image-id ami-xxxxxxxxxxxxxxxxx --instance-type t2.micro --key-name MyKeyPair --security-group-ids sg-xxxxxxxxxxxxxxxxx
-      
+
     - **Creating an EC2 Instance (AWS CDK):
       typescript
       import * as ec2 from 'aws-cdk-lib/aws-ec2';
@@ -101,7 +101,7 @@ __meta__tags: ["amazon-ec2","aws","terraform","iac","security"]
         instanceType: ec2.InstanceType.of(ec2.InstanceClass.T2, ec2.InstanceSize.MICRO),
         machineImage: new ec2.AmazonLinux2023Image({generation: ec2.AmazonLinuxGeneration.AMAZON_LINUX_2}),
       });
-      
+
     - **Attaching an EBS Volume:**
       - Ensure the EBS volume is in the same Availability Zone as the EC2 instance.
       - Use the `aws ec2 attach-volume` command or the equivalent SDK call.
@@ -146,7 +146,7 @@ __meta__tags: ["amazon-ec2","aws","terraform","iac","security"]
 
       # Create deployment package
       zip -r deployment_package.zip *
-      
+
   - **Lazy Loading:**
     - Load application modules on demand to reduce initial load time.
     - Use code splitting to break down large modules into smaller chunks.
@@ -159,7 +159,7 @@ __meta__tags: ["amazon-ec2","aws","terraform","iac","security"]
       }
 
       loadModule();
-      
+
 
 - ## 4. Security Best Practices
 
@@ -221,7 +221,7 @@ __meta__tags: ["amazon-ec2","aws","terraform","iac","security"]
 
       if __name__ == '__main__':
           unittest.main()
-      
+
   - **Integration Testing:**
     - Write integration tests to verify the interaction between components.
     - Test the integration of your application with AWS services.
@@ -247,7 +247,7 @@ __meta__tags: ["amazon-ec2","aws","terraform","iac","security"]
           EC2: jest.fn().mockImplementation(() => mEC2),
         };
       });
-      
+
 
 - ## 6. Common Pitfalls and Gotchas
 
@@ -286,7 +286,7 @@ __meta__tags: ["amazon-ec2","aws","terraform","iac","security"]
     - Example (Python):
       makefile
       # Makefile
-      venv: 
+      venv:
       	python3 -m venv .venv
       	. .venv/bin/activate
       	pip install -r requirements.txt
@@ -295,7 +295,7 @@ __meta__tags: ["amazon-ec2","aws","terraform","iac","security"]
       	zip -r deployment_package.zip *
       	aws s3 cp deployment_package.zip s3://my-bucket/deployment_package.zip
       	aws lambda update-function-code --function-name my-function --s3-bucket my-bucket --s3-key deployment_package.zip
-      
+
   - **Linting and Formatting:**
     - Use a linter (e.g., pylint, eslint) to enforce code style and identify potential errors.
     - Use a formatter (e.g., black, prettier) to automatically format your code.

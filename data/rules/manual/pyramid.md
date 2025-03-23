@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices for developing secure, maintainable, and performant applications using the Pyramid web framework for Python. It covers code structure, security, testing, and deployment considerations.
 globs: "**/*.py"
 __meta__type: guideline
-__meta__framework: pyramid
+__meta__framework: Pyramid
 __meta__tags: ["python","pyramid","web-development","best-practices","security"]
 ---
 - **Project Structure and Code Organization:**

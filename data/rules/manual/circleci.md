@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices for configuring and optimizing CircleCI workflows, covering code organization, security, performance, and testing to ensure efficient and reliable CI/CD pipelines.
 globs: ".circleci/config.yml"
 __meta__type: guideline
-__meta__service: circleci
+__meta__service: CircleCI
 __meta__tags: ["ci/cd","workflow","security","performance","testing"]
 ---
 # CircleCI Best Practices: A Comprehensive Guide

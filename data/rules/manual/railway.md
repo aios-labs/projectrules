@@ -2,7 +2,7 @@
 description: This rule outlines the best practices and coding standards for developing and deploying applications on the Railway platform, covering aspects from code organization to security and performance.
 globs: "**/*.{js,jsx,ts,tsx,py,go,java,rs,c,cpp,cs,html,css,yml,yaml,json,sh}"
 __meta__type: guideline
-__meta__service: railway
+__meta__service: Railway
 __meta__tags: ["railway","deployment","code organization","security","performance"]
 ---
 # Railway Best Practices and Coding Standards

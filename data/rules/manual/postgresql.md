@@ -2,7 +2,6 @@
 description: Enforces PostgreSQL coding standards, best practices, and performance optimization techniques to ensure maintainable, efficient, and secure database interactions. This rule covers code formatting, data integrity, security, and performance considerations.
 globs: "**/*.{sql,plpgsql,c,h}"
 __meta__type: guideline
-__meta__service: postgresql
 __meta__tags: ["postgresql","database","security","performance","optimization"]
 ---
 - **Code Formatting and Comments:**

@@ -2,7 +2,7 @@
 description: Comprehensive guide to best practices when developing with Material-UI/MUI, covering code organization, performance, security, testing, and common pitfalls. It focuses on creating maintainable, scalable, and performant React applications using MUI components.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: react
+__meta__framework: React
 __meta__tags: ["material-ui","mui","react","best-practices","coding-standards"]
 ---
 # Material-UI/MUI Best Practices and Coding Standards

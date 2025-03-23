@@ -2,13 +2,13 @@
 description: This rule set provides comprehensive best practices and coding standards for developing robust and maintainable Java backend applications using the Spring Boot framework. It focuses on code structure, performance, security, and testing.
 globs: "**/*.java"
 __meta__type: guideline
-__meta__framework: spring
+__meta__framework: Spring Boot
 __meta__tags: ["java","spring-boot","backend","coding-standards","best-practices"]
 ---
 - **Code Organization and Structure**
   - **Directory Structure Best Practices**
     - **Layered Architecture:** Organize code into layers: `controller`, `service`, `repository`, `model`, `configuration`, and `exception`.  This provides clear separation of concerns. Example:
-      
+
       src/
       └── main/
           └── java/
@@ -25,9 +25,9 @@ __meta__tags: ["java","spring-boot","backend","coding-standards","best-practices
                   │   └── AppConfig.java
                   └── exception/
                       └── OrderNotFoundException.java
-      
+
     - **Feature-Based Organization:** Group code by feature rather than layer. This keeps related files together for easier navigation.  Use when features are more important than technical separation.
-      
+
       src/
       └── main/
           └── java/
@@ -42,7 +42,7 @@ __meta__tags: ["java","spring-boot","backend","coding-standards","best-practices
                       ├── CustomerService.java
                       ├── CustomerRepository.java
                       └── Customer.java
-      
+
   - **File Naming Conventions**
     - **Classes:** Use `PascalCase`.  Names should be nouns representing the purpose of the class. Example: `OrderService`, `ProductController`.
     - **Interfaces:** Use `PascalCase`.  Often named with an `-able` suffix (e.g., `Runnable`, `Serializable`) or prefixed with `I` (e.g., `IUserService`). Example: `OrderRepository`, `UserService`.

@@ -2,13 +2,13 @@
 description: This rule provides best practices and coding standards for Vue 3 projects, covering code organization, performance, security, testing, tooling, and common pitfalls to ensure maintainable and efficient applications. It aims to guide developers in writing high-quality Vue 3 code.
 globs: "**/*.vue"
 __meta__type: guideline
-__meta__framework: vue
+__meta__framework: Vue
 __meta__tags: ["vue3","code-organization","performance","security","testing"]
 ---
 - **Code Organization and Structure**:
   - **Directory Structure**: Adopt a feature-based directory structure. Group related files (components, stores, utilities) within feature-specific directories rather than separating by file type. This enhances maintainability and discoverability.
     - Example:
-      
+
       src/
         components/
           MyComponent.vue
@@ -25,7 +25,7 @@ __meta__tags: ["vue3","code-organization","performance","security","testing"]
             store/
               userProfile.js
           ...
-      
+
   - **File Naming Conventions**: Use PascalCase for component file names (e.g., `MyComponent.vue`). Use camelCase for variable and function names (e.g., `myVariable`, `myFunction`). Use kebab-case for component selectors in templates (e.g., `<my-component>`).
   - **Module Organization**: Utilize ES modules (`import`/`export`) for modularity and code reusability. Group related functions and components into modules.
   - **Component Architecture**: Favor a component-based architecture. Design components to be small, reusable, and composable. Use props for data input and events for data output. Consider using a component library (e.g., Vuetify, Element Plus) for pre-built components.
@@ -39,7 +39,7 @@ __meta__tags: ["vue3","code-organization","performance","security","testing"]
           component: () => import('./views/About.vue')
         }
       ]
-      
+
 
 - **Common Patterns and Anti-patterns**:
   - **Design Patterns**: Apply common design patterns such as composition API, provider/inject, and observer pattern where applicable.
@@ -56,7 +56,7 @@ __meta__tags: ["vue3","code-organization","performance","security","testing"]
         console.error('Global error:', err, info);
         // Report error to server or display user-friendly message
       }
-      
+
 
 - **Performance Considerations**:
   - **Optimization Techniques**: Use `v-once` for static content. Use `v-memo` to memoize parts of the template. Use `key` attribute for `v-for` loops to improve rendering performance.
@@ -93,10 +93,10 @@ __meta__tags: ["vue3","code-organization","performance","security","testing"]
   - **Deployment Best Practices**: Use a CDN for serving static assets. Use server-side rendering (SSR) or pre-rendering for improved SEO and performance. Deploy to a reliable hosting platform.
   - **CI/CD Integration**: Integrate linting, testing, and building into the CI/CD pipeline. Use automated deployment tools. Monitor application performance and errors.
 
-- **Additional Best Practices**: 
-  - **Accessibility (A11y)**: Ensure components are accessible by using semantic HTML, providing ARIA attributes where necessary, and testing with screen readers. 
-  - **Internationalization (i18n)**: Implement i18n from the start if multilingual support is required. Use a library like `vue-i18n` to manage translations. 
-  - **Documentation**: Document components and composables using JSDoc or similar tools. Generate documentation automatically using tools like Storybook. 
+- **Additional Best Practices**:
+  - **Accessibility (A11y)**: Ensure components are accessible by using semantic HTML, providing ARIA attributes where necessary, and testing with screen readers.
+  - **Internationalization (i18n)**: Implement i18n from the start if multilingual support is required. Use a library like `vue-i18n` to manage translations.
+  - **Documentation**: Document components and composables using JSDoc or similar tools. Generate documentation automatically using tools like Storybook.
 
 - **Vue 3 Specific Recommendations**:
     - **TypeScript**: Use TypeScript for improved type safety and code maintainability. Define component props and emits with type annotations.
@@ -110,7 +110,7 @@ __meta__tags: ["vue3","code-organization","performance","security","testing"]
     - Directives: kebab-case (e.g., `v-my-directive`)
 
 - **Composition API Best Practices**:
-  - **Reactive Refs**: Use `ref` for primitive values and `reactive` for objects. 
+  - **Reactive Refs**: Use `ref` for primitive values and `reactive` for objects.
   - **Readonly Refs**: Use `readonly` to prevent accidental mutations of reactive data.
   - **Computed Properties**: Use `computed` for derived state and avoid complex logic within templates.
   - **Lifecycle Hooks**: Use `onMounted`, `onUpdated`, `onUnmounted`, etc., to manage component lifecycle events.

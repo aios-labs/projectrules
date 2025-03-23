@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices for developing React applications with Mobx, covering code organization, performance, testing, and security considerations. It aims to guide developers in building robust and maintainable applications using React-Mobx.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: react
+__meta__framework: React
 __meta__tags: ["react","mobx","best-practices","performance","testing"]
 ---
 # React-Mobx Best Practices

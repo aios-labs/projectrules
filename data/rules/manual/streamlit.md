@@ -2,12 +2,12 @@
 description: This rule provides guidelines and best practices for developing maintainable, performant, and secure Streamlit applications. It covers code organization, performance optimization, security considerations, testing strategies, and common pitfalls to avoid.
 globs: "**/*.py"
 __meta__type: guideline
-__meta__framework: streamlit
+__meta__framework: Streamlit
 __meta__tags: ["streamlit","performance","security","testing","code-organization"]
 ---
 - **Code Organization and Structure**:
   - **Directory Structure**: Structure your Streamlit application using a modular directory structure to improve maintainability and collaboration. A suggested layout includes folders for pages, services, models, components, and utilities.
-    
+
     my_streamlit_app/
     ├── app.py                # Main entry point for the Streamlit app
     ├── pages/              # Directory for individual app pages
@@ -28,11 +28,11 @@ __meta__tags: ["streamlit","performance","security","testing","code-organization
     ├── requirements.txt      # List of Python dependencies
     ├── .gitignore            # Specifies intentionally untracked files that Git should ignore
     └── .venv/                # Python virtual environment (optional)
-    
+
   - **File Naming Conventions**: Use descriptive and consistent file names for your Streamlit components, services, and pages.  For example, `data_loader.py`, `dashboard.py`, and `button.py`.
   - **Module Organization**: Organize your Streamlit application into logical modules to promote code reuse and reduce complexity.  Create separate modules for data loading, data processing, UI components, and utility functions.  Use relative imports to maintain a clear module structure.
   - **Component Architecture**: Build reusable UI components using Streamlit's `st.components.v1` API or custom functions.  Encapsulate component logic and styling to promote consistency and maintainability.  Use props or parameters to customize component behavior and appearance.
-  - **Code Splitting**: Split large Streamlit applications into multiple pages using the `st.page_config` and `st.switch_page` functions. This enhances navigation and reduces initial loading times. Consider lazy loading strategies using the `secrets` feature to control which parts of the application are loaded when. 
+  - **Code Splitting**: Split large Streamlit applications into multiple pages using the `st.page_config` and `st.switch_page` functions. This enhances navigation and reduces initial loading times. Consider lazy loading strategies using the `secrets` feature to control which parts of the application are loaded when.
 
 - **Common Patterns and Anti-patterns**:
   - **Design Patterns**: Employ the Observer pattern for reactive UIs, Facade pattern for simplifying complex interactions, and Strategy pattern to manage different data sources or algorithms.
@@ -46,7 +46,7 @@ __meta__tags: ["streamlit","performance","security","testing","code-organization
   - **Memory Management**:  Avoid loading large datasets into memory unnecessarily.  Use data streaming techniques or chunking to process large datasets in smaller portions.  Delete unused variables and data structures to release memory.
   - **Rendering Optimization**:  Use Streamlit's built-in rendering optimizations, such as delta generation, to minimize the amount of data that needs to be sent to the browser.  Avoid creating complex layouts with deeply nested components, as this can impact rendering performance.
   - **Bundle Size**: Minimize external dependencies to reduce the bundle size and improve loading times. Use a `.streamlitignore` file to exclude unnecessary files and directories from the Streamlit deployment bundle.  Consider using a CDN to serve static assets.
-  - **Lazy Loading**: Implement lazy loading for expensive components or sections of your Streamlit application.  Load components only when they are needed, using conditional rendering or callbacks. Utilize the `secrets` functionality to control the conditional loading of certain modules if access to a given secret is available. 
+  - **Lazy Loading**: Implement lazy loading for expensive components or sections of your Streamlit application.  Load components only when they are needed, using conditional rendering or callbacks. Utilize the `secrets` functionality to control the conditional loading of certain modules if access to a given secret is available.
 
 - **Security Best Practices**:
   - **Common Vulnerabilities**: Be aware of common vulnerabilities, such as cross-site scripting (XSS), SQL injection, and command injection.  Prevent these vulnerabilities by implementing proper input validation and sanitization, and by avoiding the execution of untrusted code.

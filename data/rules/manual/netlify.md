@@ -2,7 +2,7 @@
 description: This rule file outlines best practices for Netlify development, covering code structure, performance, security, testing, and deployment. It aims to provide a comprehensive guide for building robust and scalable applications on Netlify.
 globs: "**/*.{js,jsx,ts,tsx,html,css,scss,md}"
 __meta__type: guideline
-__meta__service: netlify
+__meta__service: Netlify
 __meta__tags: ["netlify","best-practices","deployment","security","testing"]
 ---
 # Netlify Library Best Practices and Coding Standards

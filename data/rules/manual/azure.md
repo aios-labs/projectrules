@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices for developing Azure applications, covering code organization, security, performance, testing, and common pitfalls. It aims to improve code quality, security posture, and overall efficiency when working with the Azure ecosystem.
 globs: "**/*.{az,tf,bicep,py,js,ts,json,yml,yaml,ps1,sh,cs,java}"
 __meta__type: guideline
-__meta__service: azure
+__meta__service: Azure
 __meta__tags: ["azure","best-practices","code-organization","security","performance"]
 ---
 # Azure Library Best Practices and Coding Standards

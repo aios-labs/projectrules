@@ -2,7 +2,7 @@
 description: This rule enforces best practices and coding standards for Chakra UI projects, including accessibility, styling, performance, and security. It aims to provide clear, actionable guidance for developers using Chakra UI.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: chakra-ui
+__meta__framework: Chakra UI
 __meta__tags: ["chakra-ui","accessibility","styling","performance","security"]
 ---
 -   **Accessibility**: Ensure all components follow WAI-ARIA standards, including keyboard navigation and screen reader support.

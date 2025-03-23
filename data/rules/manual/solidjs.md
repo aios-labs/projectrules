@@ -2,7 +2,7 @@
 description: This comprehensive guide outlines best practices for SolidJS development, covering code organization, performance, security, testing, and common pitfalls. It provides actionable guidelines for building maintainable, efficient, and secure SolidJS applications.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__framework: solidjs
+__meta__framework: SolidJS
 __meta__tags: ["solidjs","typescript","vite","reactivity","component-architecture"]
 ---
 # SolidJS Best Practices: A Comprehensive Guide

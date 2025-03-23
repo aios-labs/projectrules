@@ -2,7 +2,7 @@
 description: This rule provides best practices and coding standards for aws-amplify projects, covering code organization, common patterns, performance, security, testing, pitfalls, and tooling. It aims to guide developers in building robust, scalable, and maintainable aws-amplify applications.
 globs: "**/*.{js,jsx,ts,tsx}"
 __meta__type: guideline
-__meta__service: aws-amplify
+__meta__service: AWS Amplify
 __meta__tags: ["aws-amplify","best-practices","coding-standards","react","code-organization"]
 ---
 - # aws-amplify Best Practices

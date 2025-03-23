@@ -2,7 +2,7 @@
 description: Comprehensive best practices for developing with Supabase, covering code organization, performance, security, testing, and common pitfalls. This rule provides actionable guidance for developers to build robust and scalable applications using Supabase.
 globs: "**/*.{js,jsx,ts,tsx,sql}"
 __meta__type: guideline
-__meta__service: supabase
+__meta__service: Supabase
 __meta__tags: ["supabase","best-practices","code-organization","security","performance"]
 ---
 # Supabase Best Practices: A Comprehensive Guide

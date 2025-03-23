@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices, coding standards, and guidelines for developing applications using Vite, covering aspects from code organization and performance to security and testing.
 globs: "**/*.{js,jsx,ts,tsx,vue,svelte}"
 __meta__type: guideline
-__meta__framework: vite
+__meta__framework: Vite
 __meta__tags: ["vite","javascript","typescript","react","vue"]
 ---
 - **Introduction:**
@@ -15,7 +15,7 @@ __meta__tags: ["vite","javascript","typescript","react","vue"]
 - **Code Organization and Structure:**
   - **Directory Structure:**
     - Adopt a modular structure based on features or components.
-    
+
     src/
     ├── components/
     │   ├── Button/
@@ -37,7 +37,7 @@ __meta__tags: ["vite","javascript","typescript","react","vue"]
     ├── App.tsx
     ├── main.tsx
     └── vite-env.d.ts
-    
+
   - **File Naming Conventions:**
     - Use descriptive and consistent names.
     - Component files: `ComponentName.tsx` or `component-name.tsx`.
@@ -49,7 +49,7 @@ __meta__tags: ["vite","javascript","typescript","react","vue"]
     typescript
     // src/components/Button/index.ts
     export { default as Button } from './Button';
-    
+
   - **Component Architecture:**
     - Favor small, reusable components.
     - Utilize functional components and hooks in React (or equivalent in Vue/Svelte).
@@ -189,7 +189,7 @@ __meta__tags: ["vite","javascript","typescript","react","vue"]
     const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
       return <button onClick={onClick}>{label}</button>;
     };
-    
+
 
 - **ESLint Configuration (Example):**
   javascript
@@ -221,7 +221,7 @@ __meta__tags: ["vite","javascript","typescript","react","vue"]
       '@typescript-eslint/no-explicit-any': 'warn',
     },
   };
-  
+
 
 - **Conclusion:**
   - Following these best practices will help you build efficient, maintainable, and secure applications with Vite.  Continuously review and update your practices as the library and ecosystem evolve.

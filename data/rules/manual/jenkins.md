@@ -2,7 +2,7 @@
 description: Comprehensive best practices for Jenkins, covering code organization, security, performance, testing, and common pitfalls.  Provides guidelines for writing robust, maintainable, and secure Jenkins pipelines and configurations.
 globs: "**/{Jenkinsfile,*.jenkins,*.groovy}"
 __meta__type: guideline
-__meta__service: jenkins
+__meta__service: Jenkins
 __meta__tags: ["jenkins","ci-cd","pipelines","security","best-practices"]
 ---
 # Jenkins Library Best Practices and Coding Standards

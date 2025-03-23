@@ -2,7 +2,7 @@
 description: Comprehensive best practices for developing robust, efficient, and maintainable applications using the actix-web framework in Rust. This rule covers coding standards, project structure, performance, security, testing, and common pitfalls.
 globs: "**/*.rs"
 __meta__type: guideline
-__meta__framework: actix-web
+__meta__framework: Actix Web
 __meta__tags: ["rust","actix-web","best-practices","performance","security"]
 ---
 # Actix-web Best Practices: A Comprehensive Guide

@@ -2,7 +2,7 @@
 description: A comprehensive guide to best practices for developing REST APIs using Django REST Framework (DRF), covering code structure, design patterns, security, performance, and testing.
 globs: "**/*.py"
 __meta__type: guideline
-__meta__framework: django
+__meta__framework: Django
 __meta__tags: ["django-rest-framework","rest-api","best-practices","security","performance"]
 ---
 ---

@@ -2,7 +2,7 @@
 description: Comprehensive guidelines for developing robust, scalable, and maintainable FastAPI applications. Covers code structure, performance, security, testing, and common pitfalls.
 globs: "**/*.py"
 __meta__type: guideline
-__meta__framework: fastapi
+__meta__framework: FastAPI
 __meta__tags: ["fastapi","best-practices","code-structure","performance","security"]
 ---
 # FastAPI Best Practices: A Comprehensive Guide

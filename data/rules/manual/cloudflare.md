@@ -2,7 +2,7 @@
 description: This rule provides a comprehensive set of best practices and coding standards for developing with the Cloudflare library, specifically focusing on Terraform configurations. It aims to guide developers in creating efficient, secure, and maintainable infrastructure code.
 globs: "**/*.tf"
 __meta__type: guideline
-__meta__service: terraform
+__meta__service: Terraform
 __meta__tags: ["cloudflare","infrastructure","terraform","best-practices","coding-standards"]
 ---
 # Cloudflare Terraform Best Practices

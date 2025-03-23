@@ -2,7 +2,7 @@
 description: This rule provides comprehensive guidance on best practices for developing robust, maintainable, and performant Express.js applications, covering aspects from code organization and security to testing and deployment.
 globs: "**/*.js"
 __meta__type: guideline
-__meta__framework: express
+__meta__framework: Express
 __meta__tags: ["express","nodejs","web-development","best-practices","security"]
 ---
 - # Express.js Best Practices
@@ -19,7 +19,7 @@ __meta__tags: ["express","nodejs","web-development","best-practices","security"]
     - **Views:** Store template files in a `views` directory. Use a template engine like EJS or Pug.
     - **Example Structure:**
 
-      
+
       my-express-app/
       ├── controllers/
       │   ├── userController.js
@@ -51,7 +51,7 @@ __meta__tags: ["express","nodejs","web-development","best-practices","security"]
       ├── app.js         # Main application file
       ├── package.json
       └── .env           # Environment variables
-      
+
 
   - ### File Naming Conventions
 
@@ -127,7 +127,7 @@ __meta__tags: ["express","nodejs","web-development","best-practices","security"]
       };
 
       module.exports = errorHandler;
-      
+
 
   ## 3. Performance Considerations
 

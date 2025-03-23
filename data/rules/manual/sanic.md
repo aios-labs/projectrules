@@ -2,7 +2,7 @@
 description: This rule file outlines best practices and coding standards for developing Sanic applications, covering code organization, performance, security, testing, and common pitfalls.
 globs: "**/*.py"
 __meta__type: guideline
-__meta__framework: sanic
+__meta__framework: Sanic
 __meta__tags: ["sanic","python","best-practices","code-organization","security"]
 ---
 - This document outlines the best practices for developing applications using the Sanic framework. Following these guidelines will lead to more maintainable, performant, and secure applications.
@@ -10,7 +10,7 @@ __meta__tags: ["sanic","python","best-practices","code-organization","security"]
 ## 1. Code Organization and Structure
 
 - **Directory Structure:** Organize your project into logical directories. A recommended structure is:
-  
+
   project_root/
   ├── app/
   │   ├── __init__.py
@@ -32,7 +32,7 @@ __meta__tags: ["sanic","python","best-practices","code-organization","security"]
   ├── requirements.txt   # Project dependencies
   ├── .env               # Environment variables
   └── README.md          # Project documentation
-  
+
 
 - **File Naming Conventions:**
     - Use descriptive and consistent naming.

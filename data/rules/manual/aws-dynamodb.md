@@ -2,7 +2,7 @@
 description: This rule provides best practices and coding standards for developing applications using AWS DynamoDB. It covers aspects like schema design, performance optimization, security, and testing.
 globs: "**/*.{js,ts,jsx,tsx,py}"
 __meta__type: guideline
-__meta__service: aws
+__meta__service: AWS
 __meta__tags: ["dynamodb","aws","database","performance","security"]
 ---
 - **Minimize the number of tables; prefer single-table design.** Having fewer tables keeps things more scalable, requires less permissions management, and reduces overhead for your DynamoDB application. Consider using a single table with appropriate use of primary and secondary indexes.

@@ -2,7 +2,7 @@
 description: Enforces best practices for GitLab CI/CD configurations, promoting efficient, maintainable, and secure pipelines. This rule covers aspects from code organization to security and testing strategies.
 globs: ".gitlab-ci.yml"
 __meta__type: guideline
-__meta__service: gitlab
+__meta__service: GitLab
 __meta__tags: ["gitlab-ci","ci-cd","pipeline","best-practices","security"]
 ---
 # GitLab CI Best Practices

@@ -2,7 +2,7 @@
 description: This rule provides comprehensive best practices for Ionic Framework development, covering code organization, performance, security, testing, and more.  Following these guidelines will result in more maintainable, performant, and secure Ionic applications.
 globs: "**/*.{ts,html,scss}"
 __meta__type: guideline
-__meta__framework: ionic
+__meta__framework: Ionic
 __meta__tags: ["ionic","angular","typescript","performance","security"]
 ---
 ---
