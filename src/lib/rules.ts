@@ -61,7 +61,7 @@ async function readRulesFromDirectory(dir: string, source: 'manual' | 'external'
 }
 
 export function getUniqueValues(rules: Rule[], key: keyof RuleFrontmatter): string[] {
-  const values = new Set<string>();
+  const values = new Set<string | number>();
 
   rules.forEach(rule => {
     const value = rule.frontmatter[key];
