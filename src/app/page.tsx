@@ -157,7 +157,7 @@ export default async function Home({
               {filteredRules.length > 0 ? `Rules (${filteredRules.length})` : 'Rules'}
             </h2>
             <Button variant="outline" asChild>
-              <Link href="/download"><Plus /> Add rule</Link>
+              <Link href="https://github.com/aios-labs/projectrules/blob/main/CONTRIBUTING.md" target='_blank'><Plus /> Add rule</Link>
             </Button>
           </div>
 
