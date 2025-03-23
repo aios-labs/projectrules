@@ -35,22 +35,27 @@ async function readRulesFromDirectory(dir: string, source: 'manual' | 'external'
     for (const file of files) {
       if (file.endsWith('.md')) {
         const filePath = path.join(dir, file);
-        const fileContent = await fs.readFile(filePath, 'utf8');
+        try {
+          const fileContent = await fs.readFile(filePath, 'utf8');
 
-        // Parse frontmatter and content
-        const { data, content } = matter(fileContent);
-        const frontmatter = data as RuleFrontmatter;
+          // Parse frontmatter and content
+          const { data, content } = matter(fileContent);
+          const frontmatter = data as RuleFrontmatter;
 
-        // Create slug from filename
-        const slug = file.replace(/\.md$/, '');
+          // Create slug from filename
+          const slug = file.replace(/\.md$/, '');
 
-        rules.push({
-          slug,
-          frontmatter,
-          content,
-          source,
-          path: filePath,
-        });
+          rules.push({
+            slug,
+            frontmatter,
+            content,
+            source,
+            path: filePath,
+          });
+        } catch (fileError) {
+          console.error(`Error parsing file ${filePath}:`, fileError);
+          // Continue processing other files
+        }
       }
     }
   } catch (error) {
