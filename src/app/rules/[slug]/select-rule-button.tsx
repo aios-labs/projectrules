@@ -2,23 +2,23 @@
 
 import { useSelectedRules } from "@/hooks/use-selected-rules";
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { Check, Plus } from "lucide-react";
 
 interface SelectRuleButtonProps {
   slug: string;
 }
 
 export function SelectRuleButton({ slug }: SelectRuleButtonProps) {
-  const { selectRule, isRuleSelected } = useSelectedRules();
+  const { toggleRule, isRuleSelected } = useSelectedRules();
   const isSelected = isRuleSelected(slug);
 
   return (
     <Button
+      className="cursor-pointer"
       variant={isSelected ? "secondary" : "default"}
-      onClick={() => selectRule(slug)}
-      disabled={isSelected}
+      onClick={() => toggleRule(slug)}
     >
-      <Download className="mr-2 h-4 w-4" />
+      {isSelected ? <Check className="mr-2 h-4 w-4" /> : <Plus className="mr-2 h-4 w-4" />}
       {isSelected ? 'Selected' : 'Select Rule'}
     </Button>
   );
