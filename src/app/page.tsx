@@ -131,7 +131,7 @@ export default async function Home({
         <p className="text-muted-foreground mb-6 max-w-3xl mx-auto max-w-lg text-balance text-xl mt-8">
           A collection of{' '}
           <span className="highlight-flicker">curated</span>
-          {' '}instructions and projects rules for your AI-powered IDE tools.
+          {' '}instructions and project rules for your AI-powered IDE tools.
         </p>
       </section>
 

@@ -19,13 +19,11 @@ export async function generateMetadata({ params }: RuleDetailProps): Promise<Met
   const rule = await getRuleBySlug(resolvedParams.slug);
 
   if (!rule) {
-    return {
-      title: 'Rule Not Found',
-    };
+    return notFound();
   }
 
   return {
-    title: `${rule.frontmatter.__meta__framework} - ${rule.frontmatter.__meta__service}`,
+    title: getFirstH1(rule) ?? rule.slug,
     description: rule.frontmatter.description,
   };
 }
