@@ -7,6 +7,7 @@ import { Rule } from '@/types/rule';
 import { useSelectedRules } from '@/hooks/use-selected-rules';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
+import { getFirstH1 } from '@/utils/get-first-h1';
 
 interface RuleCardProps {
   rule: Rule;
@@ -15,16 +16,6 @@ interface RuleCardProps {
 export function RuleCard({ rule }: RuleCardProps) {
   const { toggleRule, isRuleSelected } = useSelectedRules();
   const isSelected = isRuleSelected(rule.slug);
-
-  // Extract the first h1 from content
-  const getFirstH1 = () => {
-    if (!rule.content) return rule.frontmatter.__meta__framework;
-
-    // Look for the first h1 tag in the content
-    const h1Match = rule.content.match(/<h1>(.*?)<\/h1>/) || rule.content.match(/# (.*?)(\n|$)/);
-
-    return h1Match ? h1Match[1] : rule.frontmatter.__meta__framework;
-  };
 
   // Handle select/deselect with preventing link navigation
   const handleSelectClick = (e: React.MouseEvent) => {
@@ -70,7 +61,7 @@ export function RuleCard({ rule }: RuleCardProps) {
                 {/* Title from first h1 in content */}
                 <div>
                   <h3 className="font-bold text-lg md:text-xl transition-colors mr-4 text-indigo-950 tracking-tighter">
-                    {getFirstH1() ?? rule.slug}
+                    {getFirstH1(rule) ?? rule.slug}
                   </h3>
                 </div>
 

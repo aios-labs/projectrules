@@ -6,6 +6,7 @@ import { ArrowLeft } from 'lucide-react';
 import { Badge } from "@/components/ui/badge";
 import { SelectRuleButton } from './select-rule-button';
 import { MarkdownDisplay } from './markdown-display';
+import { getFirstH1 } from '@/utils/get-first-h1';
 
 interface RuleDetailProps {
   params: Promise<{
@@ -48,11 +49,11 @@ export default async function RuleDetail({ params }: RuleDetailProps) {
 
       <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight mb-2">{rule.frontmatter.__meta__framework}</h1>
+          <h1 className="text-3xl font-bold tracking-tight mb-2">{getFirstH1(rule) ?? rule.slug}</h1>
           <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-            <Badge variant="outline">{rule.frontmatter.__meta__service}</Badge>
-            <Badge variant="outline">{rule.frontmatter.__meta__type}</Badge>
-            <Badge variant="outline">{rule.source}</Badge>
+            {rule.frontmatter.__meta__tags.map((tag) => (
+              <Badge variant="secondary" key={tag}>{tag}</Badge>
+            ))}
           </div>
         </div>
 

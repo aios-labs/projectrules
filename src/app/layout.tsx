@@ -3,6 +3,7 @@ import { Space_Mono, Ubuntu } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "@/components/ui/sonner";
 
 const ubuntu = Ubuntu({
   variable: "--font-ubuntu",
@@ -49,6 +50,7 @@ export default function RootLayout({
           <main className="container mx-auto py-8 px-4">
             {children}
           </main>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

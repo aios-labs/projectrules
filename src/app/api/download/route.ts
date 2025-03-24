@@ -1,29 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getRules } from '@/lib/rules';
 import archiver from 'archiver';
-import fs from 'fs/promises';
 import path from 'path';
-
-export async function POST(request: NextRequest) {
-  try {
-    const { slugs } = await request.json();
-
-    if (!slugs || !Array.isArray(slugs) || slugs.length === 0) {
-      return NextResponse.json(
-        { error: 'Invalid or missing slugs parameter' },
-        { status: 400 }
-      );
-    }
-
-    return await generateZip(slugs);
-  } catch (error) {
-    console.error('Error processing download request:', error);
-    return NextResponse.json(
-      { error: 'Failed to process download request' },
-      { status: 500 }
-    );
-  }
-}
 
 export async function GET(request: NextRequest) {
   try {
@@ -95,14 +73,29 @@ async function generateZip(slugs: string[]) {
 
   // Add each rule to the archive
   for (const rule of rulesToDownload) {
-    // Read the file content
-    const fileContent = await fs.readFile(rule.path, 'utf8');
-
     // Get just the filename without path
     const fileName = path.basename(rule.path);
 
-    // Add file to the archive
-    archive.append(fileContent, { name: fileName });
+    // Filter frontmatter to only include fields that don't start with __meta__
+    const filteredFrontmatter: Record<string, string | string[] | number | undefined> = {};
+    for (const [key, value] of Object.entries(rule.frontmatter)) {
+      if (!key.startsWith('__meta__')) {
+        filteredFrontmatter[key] = value;
+      }
+    }
+
+    // Create frontmatter string
+    let frontmatterContent = '---\n';
+    for (const [key, value] of Object.entries(filteredFrontmatter)) {
+      frontmatterContent += `${key}: ${JSON.stringify(value)}\n`;
+    }
+    frontmatterContent += '---\n\n';
+
+    // Combine frontmatter with content
+    const fullContent = frontmatterContent + rule.content;
+
+    // Add file to the archive using the content already in the rule object
+    archive.append(fullContent, { name: fileName });
   }
 
   // Finalize the archive

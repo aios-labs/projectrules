@@ -5,7 +5,8 @@ import { X, Download } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useSelectedRules } from "@/hooks/use-selected-rules";
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
+import { getFirstH1 } from "@/utils/get-first-h1";
 
 interface SelectedRulesListProps {
   allRules: Rule[];
@@ -13,12 +14,10 @@ interface SelectedRulesListProps {
 
 export function SelectedRulesList({ allRules }: SelectedRulesListProps) {
   const { selectedRules, deselectRule } = useSelectedRules();
-  const [selectedRuleObjects, setSelectedRuleObjects] = useState<Rule[]>([]);
 
-  // Filter rules to only show those selected
-  useEffect(() => {
-    const filteredRules = allRules.filter(rule => selectedRules.includes(rule.slug));
-    setSelectedRuleObjects(filteredRules);
+  // Derive selected rule objects with useMemo instead of useState + useEffect
+  const selectedRuleObjects = useMemo(() => {
+    return allRules.filter(rule => selectedRules.includes(rule.slug));
   }, [allRules, selectedRules]);
 
   if (selectedRuleObjects.length === 0) {
@@ -38,20 +37,17 @@ export function SelectedRulesList({ allRules }: SelectedRulesListProps) {
         You have selected {selectedRuleObjects.length} rule{selectedRuleObjects.length === 1 ? '' : 's'} for download.
       </p>
 
-      <div className="grid gap-4">
+      <div className="grid gap-3">
         {selectedRuleObjects.map(rule => (
           <div key={rule.slug} className="glass-card p-4 rounded-lg flex items-center justify-between gap-4">
             <div>
-              <div className="font-medium">{rule.frontmatter.__meta__framework}</div>
-              <div className="text-sm text-muted-foreground">
-                {rule.frontmatter.__meta__service} • {rule.frontmatter.__meta__type}
-              </div>
+              <div className="font-medium">{getFirstH1(rule) ?? rule.slug}</div>
             </div>
             <Button
               size="icon"
               variant="ghost"
               onClick={() => deselectRule(rule.slug)}
-              className="h-8 w-8"
+              className="h-8 w-8 cursor-pointer z-10"
             >
               <X className="h-4 w-4" />
               <span className="sr-only">Remove</span>
