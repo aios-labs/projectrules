@@ -4,7 +4,7 @@ globs: "**/*"
 __meta__type: "guideline"
 __meta__repo: "PMLS3/empire"
 __meta__service: "Firebase"
-__meta__framework: "Nuxt.js"
+__meta__framework: "NuxtJS"
 __meta__tags: ["Modular Architecture","AI","Authentication","CRM","TypeScript"]
 __meta__rate: 8
 ---
