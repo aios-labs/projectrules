@@ -238,3 +238,75 @@
     font-family: var(--font-ubuntu);
   }
 }
+
+/* Custom animations */
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+}
+
+/* Fallout terminal effects */
+@keyframes fallout-scan {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0.1;
+  }
+}
+
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 4px rgba(74, 47, 189, 0.2), 0 0 8px rgba(74, 47, 189, 0.2), 0 0 10px rgba(74, 47, 189, 0.2);
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+}
+
+@keyframes glitch {
+  0%, 100% { transform: none; }
+  7% { transform: skew(-0.5deg, -0.9deg); }
+  10% { transform: skew(0.8deg, -0.1deg); }
+  20% { transform: skew(0.6deg, 0.9deg); }
+  35% { transform: skew(-0.8deg, 0.6deg); }
+  45% { transform: skew(0.3deg, -0.2deg); }
+  75% { transform: skew(0.5deg, 0.7deg); }
+  85% { transform: skew(0.9deg, -0.5deg); }
+}
+
+.highlight-flicker {
+  position: relative;
+  display: contents;
+  animation: flicker 10s infinite, glitch 15s infinite;
+  overflow: hidden;
+}
+
+.highlight-flicker::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: rgba(74, 47, 189, 0.3);
+  animation: fallout-scan 2s linear infinite;
+  z-index: 1;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

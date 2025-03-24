@@ -129,7 +129,9 @@ export default async function Home({
       <section className="mb-12 text-center">
         <h1 className="text-6xl font-bold tracking-tight mb-3">Project Rules</h1>
         <p className="text-muted-foreground mb-6 max-w-3xl mx-auto max-w-lg text-balance text-xl mt-8">
-          A collection of curated instructions and projects rules for your AI-powered IDE tools.
+          A collection of{' '}
+          <span className="highlight-flicker">curated</span>
+          {' '}instructions and projects rules for your AI-powered IDE tools.
         </p>
       </section>
 
